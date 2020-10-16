@@ -793,15 +793,37 @@ img {
 }
 
 .p_fashion__item {
+  position: relative;
   margin: 0 8px 32px;
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .p_fashion__item img {
   display: block;
-  width: 150px;
-  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  mix-blend-mode: darken;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.p_fashion__item img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.p_fashion__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 0 0 4px black;
+  z-index: 10;
 }
 
 .aaa {
