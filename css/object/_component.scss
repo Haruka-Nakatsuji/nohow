@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+$main_color: #4169e1;
+
+@keyframes openMenu {
+  // 90% {
+  // 	transform: none translateY(-10px);
+  // }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes jumpGocheck {
+  100% {
+    transform: translateX(-50%) scale(1.1, 1.1);
+  }
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import "../object/component";
+
+.l_sam {
+  height: 100vh;
+}
+
+.l_header {
+  position: fixed;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
+  z-index: 999;
+
+  img {
+    width: 8px * 20;
+  }
+}
+
+.l_hero {
+  position: relative;
+  height: 100vh;
+  background: url("../src/images/hero_img.jpeg") center;
+  background-size: cover;
+}
+
+.l_fashion {
+  height: 100vh;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: (8px * 6) 0 0;
+  }
+}

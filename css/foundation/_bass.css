@@ -1,0 +1,12 @@
+li {
+  list-style: disc;
+}
+
+nav li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=bass.css.map */
