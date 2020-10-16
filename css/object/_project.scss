@@ -109,11 +109,16 @@
     display: inline-block;
     visibility: hidden;
     opacity: 0;
-    padding: 16px;
+    margin: 8px 0;
     background: $main_color;
     border-radius: 16px;
     color: #fff;
     box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.2);
+
+    a {
+      display: block;
+      padding: 16px;
+    }
 
     &:hover {
       background-color: darken($main_color, 5);
@@ -156,20 +161,28 @@
 .p_scroll {
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 0;
   transform: translateX(-50%);
   z-index: 2;
   font-size: 0.8rem;
 
-  &::before {
-    content: "";
+  &__line {
     width: 1px;
     height: 22px;
     background: #000;
-    position: absolute;
-    top: 24px;
-    left: 50%;
+    margin: 8px auto 0;
   }
+
+  // &::before {
+  //   content: "";
+  //   width: 1px;
+  //   height: 22px;
+  //   background: #000;
+  //   position: absolute;
+  //   top: 24px;
+  //   bottom: 0;
+  //   left: 50%;
+  // }
 }
 
 // .p_fashion {

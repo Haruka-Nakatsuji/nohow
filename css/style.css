@@ -711,12 +711,17 @@ img {
   display: inline-block;
   visibility: hidden;
   opacity: 0;
-  padding: 16px;
+  margin: 8px 0;
   background: #4169e1;
   border-radius: 16px;
   color: #fff;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.p_nav__item a {
+  display: block;
+  padding: 16px;
 }
 
 .p_nav__item:hover {
@@ -766,21 +771,18 @@ img {
 .p_scroll {
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
   font-size: 0.8rem;
 }
 
-.p_scroll::before {
-  content: "";
+.p_scroll__line {
   width: 1px;
   height: 22px;
   background: #000;
-  position: absolute;
-  top: 24px;
-  left: 50%;
+  margin: 8px auto 0;
 }
 
 .p_fashion__title {
