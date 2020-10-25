@@ -25,13 +25,17 @@
   background-size: cover;
 }
 
-.l_fashion {
-  height: 100vh;
+// .l_fashion {
+//   height: 100vh;
+// }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: (8px * 6) 0 0;
-  }
+.l_top-section {
+  padding: 2%;
+}
+
+.l_footer {
+  margin-top: 64px;
+  padding: 32px;
+  background: #eee;
+  text-align: center;
 }

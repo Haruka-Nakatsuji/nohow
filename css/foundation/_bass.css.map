@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,OAAO,CAAP,qFAAO;AAEP,AAAA,EAAE,CAAC;EACF,UAAU,EAAE,IAAI;CAChB;;AAED,AAAA,GAAG,CAAC,EAAE,CAAC;EACN,UAAU,EAAE,IAAI;CAChB;;AAED,AAAA,GAAG,CAAC;EACH,KAAK,EAAE,IAAI;CACX",
-    "sources": [
-        "bass.scss"
-    ],
-    "names": [],
-    "file": "bass.css"
-}

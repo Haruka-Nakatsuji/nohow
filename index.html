@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://raw.githubusercontent.com/nicolas-cusan/destyle.css/master/destyle.css"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,9 +21,11 @@
         <br />
         <li class="p_nav__item"><a href="#">診断</a></li>
         <br />
-        <li class="p_nav__item"><a href="#">ファッション一覧</a></li>
+        <li class="p_nav__item"><a href="#">タイプ別ファッション</a></li>
         <br />
-        <li class="p_nav__item"><a href="#">コラム</a></li>
+        <li class="p_nav__item"><a href="#">よみもの</a></li>
+        <br>
+        <li class="p_nav__item"><a href="#">お悩み解決</a></li>
       </ul>
       <div class="p_nav">
         <span></span>
@@ -35,22 +38,21 @@
       <div class="p_scroll__line"></div>
     </div>
     <main class="l_main">
-      <article class="l_hero js-section">
+      <article class="l_hero">
         <h2 class="p_hero__catch">もう、選ばせない。</h2>
         <a class="p_hero__gocheck" href="#">診断へGO!</a>
 	    </article>
-    <div class="js-section">
-      <section class="l_fashion">
-        <!-- <ul class="p_fashion__list">
-			<li><a class="p_fashion__item" href="#">Aタイプ</a></li>
+      <section class="l_top-section">
+      <!-- <ul class="p_fashion__list">
+		<li><a class="p_fashion__item" href="#">Aタイプ</a></li>
 			<li><a class="p_fashion__item" href="#">Bタイプ</a></li>
 			<li><a class="p_fashion__item" href="#">Cタイプ</a></li>
 			<li><a class="p_fashion__item" href="#">Dタイプ</a></li>
 			<li><a class="p_fashion__item" href="#">Eタイプ</a></li>
 		</ul> -->
-        <h2 class="p_fashion__title">STYLING</h2>
+        <h2 class="c_index">あなたのタイプは?</h2>
 
-        <div class="l_fashion__list">
+        <div class="p_fashion__list">
           <div class="p_fashion__item">
             <p class="p_fashion__text">Aタイプ</p>
             <div class="p_fashion__back"></div>
@@ -72,12 +74,62 @@
             <img src="src/images/hero_img.jpeg" alt="sas" />
           </div>
         </div>
-	  </section>
-	  <section class="l_sam">
-    </section>
-	</div>
+      </section>
+      <section class="l_top-section">
+        <h2 class="c_index">よみもの</h2>
+        <img class="p_read__img" src="./src/images/face.png" alt="a">
+        <p class="c_top-text">
+          ファッションの<b>ノウハウ</b>が詰まった「よみもの」<br>
+          時間があるときにどうぞ。
+        </p>
+        <a class="c_top-button" href="#">もっと読む</a>
+      </section>
+      <section class="l_top-section">
+        <h2 class="c_index">お悩み解決</h2>
+        <div class="p_faq-figure">
+          <div class="p_faq-figure__flex">
+            <img src="./src/images/face.png" alt="Q">
+            <div class="p_faq-figure__text">
+              服が多すぎるんだけど、<br>どうしたらいいかな？
+            </div>
+          </div>
+          <div class="p_faq-figure__flex">
+            <div class="p_faq-figure__text--low">
+              それはですね・・・
+            </div>
+            <img src="./src/images/face2.png" alt="Q">
+          </div>
+          <div class="p_faq-figure__bg"></div>
+        </div>
+        <p class="c_top-text">
+          ファッションや服に関する質問やお悩みをNO-HOWがお答えします！
+        </p>
+        <a class="c_top-button" href="#">もっと読む</a>
+      </section>
     </main>
-
+    <footer class="l_footer p_footer">
+      <h2 class="p_footer__title">ご購入はこちらから</h2>
+      <a href="#"><img class="p_footer__zozo" src="./src/images/zooz_logo.jpeg" alt="zozo"></a>
+      <h3 class="p_footer__title">あなたのタイプは?</h3>
+      <div class="p_footer__link">
+        <a href="#">Aタイプ</a>
+        <a href="#">Bタイプ</a>
+        <a href="#">Cタイプ</a>
+        <a href="#">Dタイプ</a>
+      </div>
+      <div class="p_footer__link">
+        <a href="#">よみもの</a>
+        <a href="#">お悩み解決</a>
+      </div>
+      <a class="p_footer__gotop" href="#">ページトップへ<i class="fas fa-arrow-up"></i></a>
+      <div class="p_footer__copyright">
+        <small>Copyright&copy; 2014 Adobe Systems Incorporated</small>
+        <small>Copyright&copy; 2012 M+ FONTS PROJECT</small>
+        <small>Copyright&copy; 2014 Jikasei Font Kobo by MM.</small>
+        <small>Copyright&copy; 2014 HONOKA Project</small><br>
+        <small>Copyright&copy; 2021 NO-HOW</small>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.scrollify.js"></script>
     <script src="js/index.js"></script>

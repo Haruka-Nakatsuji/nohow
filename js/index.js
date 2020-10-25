@@ -27,13 +27,13 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-const option = {
-	section : '.js-section',
-	easing: "swing",
-	scrollSpeed: 200, // スクロール時の速度
-	scrollbars: true,
-};
+// const option = {
+// 	section : '.js-section',
+// 	easing: "swing",
+// 	scrollSpeed: 200, // スクロール時の速度
+// 	scrollbars: true,
+// };
 
-$(function() {
-	$.scrollify(option); // scrollifyの実行
-});
+// $(function() {
+// 	$.scrollify(option); // scrollifyの実行
+// });
