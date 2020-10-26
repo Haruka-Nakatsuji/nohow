@@ -27,6 +27,12 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+document.addEventListener('DOMContentLoaded', () =>{
+  /iPhone|iPod|iPad|Android/i.test(navigator.userAgent)
+  && document.querySelectorAll('.l_hero')
+  .style.height = `${window.outerHeight}px`
+})
+
 // const option = {
 // 	section : '.js-section',
 // 	easing: "swing",
