@@ -2,8 +2,10 @@
 @import "./destyle";
 
 @font-face {
-  font-family: "ほのか丸ゴシック";
-  src: url("../../src/font/font_1_honokamarugo_1.1.ttf") format("truetype");
+  font-family: "Honoka Maru";
+  src: url("https://dl.dropboxusercontent.com/s/a78q5udslq63gbn/font_1_honokamarugo_1.1.woff") format("woff"),
+	   url("../../src/font/font_1_honokamarugo_1.1.woff") format("woff"),
+	   url("../../src/font/font_1_honokamarugo_1.1.ttf") format("truetype");
 }
 
 html {
@@ -12,7 +14,7 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "ほのか丸ゴシック", "筑紫A丸ゴシック", Arial, "Hiragino Kaku Gothic ProN",
+  font-family: "Honoka Maru", "筑紫A丸ゴシック", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
   color: #333;
   letter-spacing: 0.1rem;
