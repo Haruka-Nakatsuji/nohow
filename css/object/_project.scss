@@ -9,7 +9,7 @@
     right: 3%;
     // padding: 4px 8px;
     // background: #fff;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-family: serif;
     color: #000;
   }
@@ -20,7 +20,7 @@
     bottom: 15vh;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     // font-family: serif;
     white-space: nowrap;
     color: #000;
@@ -313,7 +313,7 @@
     font-size: .8rem;
     background: #fff;
     border-radius: 16px;
-    box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.1);
     text-align: center;
     white-space: nowrap;
 
@@ -359,7 +359,7 @@
   
   &__title {
     margin: 32px 0 8px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   
   &__link {
@@ -368,9 +368,14 @@
     justify-content: center;
 
       a {
-        margin: 8px;
+        margin: 4px 8px;
         text-decoration: underline;
       }
+	  
+	  &--other {
+		  @extend .p_footer__link;
+		  margin: 8px;
+	  }
   }
 
   &__gotop {
