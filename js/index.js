@@ -27,13 +27,8 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-// const option = {
-// 	section : '.js-section',
-// 	easing: "swing",
-// 	scrollSpeed: 200, // スクロール時の速度
-// 	scrollbars: true,
-// };
+const vh = window.innerHeight;
 
-// $(function() {
-// 	$.scrollify(option); // scrollifyの実行
-// });
+window.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('l_hero').style.height = vh + 'px';
+});
