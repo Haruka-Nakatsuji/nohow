@@ -27,19 +27,8 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-document.addEventListener('DOMContentLoaded', () =>{
-  /iPhone|iPod|iPad|Android/i.test(navigator.userAgent)
-  && document.querySelectorAll('.l_hero')
-  .style.height = `${window.outerHeight}px`
-})
+const vh = window.innerHeight;
 
-// const option = {
-// 	section : '.js-section',
-// 	easing: "swing",
-// 	scrollSpeed: 200, // スクロール時の速度
-// 	scrollbars: true,
-// };
-
-// $(function() {
-// 	$.scrollify(option); // scrollifyの実行
-// });
+window.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('l_hero').style.height = vh + 'px';
+});
