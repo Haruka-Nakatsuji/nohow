@@ -32,3 +32,7 @@ const vh = window.innerHeight;
 window.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('.l_hero').style.height = vh + 'px';
 });
+
+window.addEventListener('resize', () => {
+	document.querySelector('.l_hero').style.height = vh + 'px';
+});
