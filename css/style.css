@@ -709,8 +709,6 @@ img {
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-animation: jumpGocheck 0.8s infinite alternate;
-          animation: jumpGocheck 0.8s infinite alternate;
 }
 
 .p_hero__gocheck:hover {
