@@ -168,17 +168,22 @@
 
 .p_scroll {
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  transform: translateX(-50%);
-  z-index: 2;
+  // transform: translateX(-50%);
+  z-index: 1;
   font-size: 0.8rem;
+  color: #fff;
+
+  p {
+    transform: rotate(90deg);
+  }
 
   &__line {
     width: 1px;
-    height: 22px;
-    background: #000;
-    margin: 8px auto 0;
+    height: 32px;
+    background: #fff;
+    margin: 16px auto 0;
   }
 
   // &::before {
@@ -348,6 +353,10 @@
     background: lighten($color: $main_color, $amount: 30);
     z-index: -50;
   }
+}
+
+.p_top-button {
+  @include main-button;
 }
 
 .p_footer {

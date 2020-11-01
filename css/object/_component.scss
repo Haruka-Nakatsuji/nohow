@@ -47,7 +47,7 @@ $main_color: #4169e1;
   text-align: center;
 }
 
-.c_top-button {
+@mixin main-button {
   display: block;
   width: 70%;
   margin: 40px auto 0;
