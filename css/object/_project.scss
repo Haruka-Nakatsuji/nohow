@@ -168,22 +168,17 @@
 
 .p_scroll {
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
-  // transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
   font-size: 0.8rem;
-  color: #fff;
-
-  p {
-    transform: rotate(90deg);
-  }
 
   &__line {
     width: 1px;
     height: 32px;
-    background: #fff;
-    margin: 16px auto 0;
+    background: currentColor;
+    margin: 8px auto 0;
   }
 
   // &::before {
