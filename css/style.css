@@ -791,17 +791,11 @@ img {
   margin: 8px auto 0;
 }
 
-.p_fashion__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .p_fashion__item {
   position: relative;
-  margin: 0 8px 32px;
-  width: 40%;
-  height: 200px;
-  max-width: 180px;
+  margin: 32px auto;
+  width: 80%;
+  height: 160px;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -822,6 +816,7 @@ img {
   color: #fff;
   text-shadow: 0 0 4px black;
   z-index: 10;
+  font-size: 1.5rem;
 }
 
 .p_read__img {

@@ -223,18 +223,19 @@
 .p_fashion {
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: center;
     // padding: (8px * 6) 0 0;
   }
 
   &__item {
     position: relative;
-    margin: 0 8px 32px;
-    width: 40%;
-    height: 200px;
-    max-width: 180px;
+//    margin: 0 8px 32px;
+	  margin: 32px auto;
+    width: 80%;
+    height: 160px;
+//    max-width: 180px;
     overflow: hidden;
     background-color: rgba($color: #000000, $alpha: 0.2);
 
@@ -258,6 +259,7 @@
     color: #fff;
     text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
     z-index: 10;
+	  font-size: 1.5rem;
   }
 
   // &__back {
