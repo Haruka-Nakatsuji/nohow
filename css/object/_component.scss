@@ -3,11 +3,10 @@
 $main_color: #4169e1;
 
 @keyframes openMenu {
-  // 90% {
-  // 	transform: none translateY(-10px);
-  // }
+	0% {
+		display: inline-block;
+	}
   100% {
-    visibility: visible;
     opacity: 1;
     transform: none;
   }
