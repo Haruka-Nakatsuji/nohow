@@ -8,8 +8,9 @@ const vh = window.innerHeight;
 const vw = window.innerWidth;
 const li = document.querySelectorAll('.p_checker__btn li');
 
-
-document.querySelector('.l_checker__sec').style.height = vh + "px";
+window.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('.l_checker__sec').style.height = vh + "px";
+});
 
 function no_scroll() {
     // PCでのスクロール禁止
