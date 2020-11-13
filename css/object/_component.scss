@@ -18,6 +18,15 @@ $main_color: #4169e1;
   }
 }
 
+@keyframes ganimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .c_index {
   position: relative;
   text-align: center;
@@ -49,7 +58,7 @@ $main_color: #4169e1;
 @mixin main-button {
   display: block;
   width: 70%;
-  margin: 40px auto 0;
+  margin: 0px auto 0;
   padding: 16px;
   font-size: 1.5rem;
   font-weight: bold;

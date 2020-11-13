@@ -39,3 +39,46 @@
   background: #eee;
   text-align: center;
 }
+
+.l_checker {
+
+  &__wrap {
+    display: flex;
+    width: 100vw * 5;
+  }
+
+  &__sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+
+  &__in {
+    width: 100%;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 1rem;
+    }
+
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 0 2px 16px;
+      border: solid #ccc 1px;
+      border-radius: 50%;
+
+      &.active {
+        background: $main_color;
+      }
+    }
+  }
+}

@@ -412,3 +412,34 @@
     }
   }
 }
+
+.p_checker {
+
+  &__btn {
+
+    li {
+      @include main-button;
+      margin-bottom: 16px;
+      list-style: none;
+      font-size: 1rem;
+      font-weight: normal;
+      cursor: pointer;
+    }
+  }
+
+  &__frontg {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background: #fff;
+    z-index: 500;
+
+    &.active {
+      display: block;
+      animation: ganimation .8s forwards;
+    }
+  }
+}
