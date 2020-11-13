@@ -9,6 +9,8 @@ const vw = window.innerWidth;
 const li = document.querySelectorAll('.p_checker__btn li');
 
 
+document.querySelector('.l_checker__sec').style.height = vh + "px";
+
 function no_scroll() {
     // PCでのスクロール禁止
     document.addEventListener("mousewheel", scroll_control, { passive: false });
@@ -23,7 +25,7 @@ function scroll_control(event) {
 
 li.forEach(item => {
 	item.addEventListener('click', () => {
-        ganimation();
+        ganimation(); 
 		checkType(item);
 		window.scrollBy(0 , vh);
 	});
