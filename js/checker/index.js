@@ -25,7 +25,7 @@ li.forEach(item => {
 	item.addEventListener('click', () => {
         ganimation();
 		checkType(item);
-		window.scrollBy(vw , 0);
+		window.scrollBy(0 , vh);
 	});
 });
 

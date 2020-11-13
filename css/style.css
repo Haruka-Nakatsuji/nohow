@@ -611,13 +611,6 @@ img {
   text-align: center;
 }
 
-.l_checker__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500vw;
-}
-
 .l_checker__sec {
   display: -webkit-box;
   display: -ms-flexbox;
