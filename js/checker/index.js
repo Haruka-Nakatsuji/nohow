@@ -18,7 +18,7 @@ function no_scroll() {
 function scroll_control(event) {
     event.preventDefault();
 }
-no_scroll();
+// no_scroll();
 
 
 li.forEach(item => {
