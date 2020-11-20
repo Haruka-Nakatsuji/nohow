@@ -9,7 +9,8 @@
         "object/_component.scss",
         "object/_component.scss",
         "object/_project.scss",
-        "object/_component.scss"
+        "object/_component.scss",
+        "_pc.scss"
     ],
     "names": [],
     "file": "style.css"
