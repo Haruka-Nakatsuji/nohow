@@ -9,7 +9,9 @@ const vw = window.innerWidth;
 const li = document.querySelectorAll('.p_checker__btn li');
 
 window.addEventListener('DOMContentLoaded', () => {
-	document.querySelector('.l_checker__sec').style.height = vh + "px";
+	document.querySelectorAll('.l_checker__sec').forEach(item => {
+		item.style.height = vh + "px";
+	})
 });
 
 function no_scroll() {
