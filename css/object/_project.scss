@@ -144,7 +144,7 @@
     }
 
     &.open {
-	  display: inline-block;
+      display: inline-block;
       animation: openMenu 0.3s ease-out forwards;
 
       &:nth-child(3) {
@@ -222,17 +222,10 @@
 
 .p_fashion {
 
-  &__list {
-//    display: flex;
-//    flex-wrap: wrap;
-//    justify-content: center;
-    // padding: (8px * 6) 0 0;
-  }
-
   &__item {
     position: relative;
 //    margin: 0 8px 32px;
-	  margin: 32px auto;
+    margin: 32px auto;
     width: 80%;
     height: 160px;
 //    max-width: 180px;
@@ -259,7 +252,7 @@
     color: #fff;
     text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
     z-index: 10;
-	  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   // &__back {
@@ -310,7 +303,7 @@
   &__text {
     position: relative;
     width: 60%;
-    // height: 100px;s
+    // height: 100px;
     padding: 32px 16px;
     font-size: .8rem;
     background: #fff;
@@ -377,11 +370,11 @@
         margin: 4px 8px;
         text-decoration: underline;
       }
-	  
-	  &--other {
-		  @extend .p_footer__link;
-		  margin: 8px;
-	  }
+    
+    &--other {
+      @extend .p_footer__link;
+      margin: 8px;
+    }
   }
 
   &__gotop {
