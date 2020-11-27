@@ -1,6 +1,80 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 1024px) {
+@import "./object/component";
 
+// @media screen and (min-width: 1024px) {
 
-}
+//     .p_nav {
+//         width: 80px;
+//         height: 80px;
+
+//         span {
+//             height: 6px;
+//         }
+//     }
+
+//     .p_hero {
+//         &__catch {
+//             right: 25%;
+//             bottom: none;
+//             top: 38vh;
+//             font-size: 1.75rem;
+//             transform: translateX(50%);
+//         }
+
+//         &__gocheck {
+//             bottom: 38vh;
+//             left: 75%;
+//             width: 30%;
+//             text-align: center;
+//             background: $main_color;
+//             color: #fff;
+//         }
+//     }
+
+//     .p_scroll {
+//         left: 75%;
+//     }
+
+//     .p_nav {
+//         &__contents{
+//             bottom: 120px;
+//         }
+//     }
+
+//     .l_main {
+//         background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
+//         background-size: contain;
+//     }
+
+//     .l_hero {
+//         background: none;
+//     }
+
+//     .l_top-section {
+//         width: 50%;
+//         margin-left: auto;
+
+//         &:last-child {
+//             padding-bottom: 64px;
+//         }
+//     }
+
+//     .l_footer {
+//         margin-top: 0;
+//     }
+
+//     .c_top-text {
+//         font-size: 1.2rem;
+//     }
+
+//     .p_faq-figure__text {
+//         font-size: 1rem;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .l_main {
+//         background-size: 50% auto;
+//     }
+// }

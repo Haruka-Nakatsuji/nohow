@@ -1189,4 +1189,60 @@ img {
   -webkit-animation: ganimation .8s forwards;
           animation: ganimation .8s forwards;
 }
+
+@keyframes openMenu {
+  0% {
+    display: inline-block;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes jumpGocheck {
+  100% {
+    -webkit-transform: translateX(-50%) scale(1.1, 1.1);
+            transform: translateX(-50%) scale(1.1, 1.1);
+  }
+}
+
+@keyframes ganimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.c_index {
+  position: relative;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 56px;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.c_index::before {
+  content: "";
+  bottom: -16px;
+  left: 50%;
+  position: absolute;
+  width: 160px;
+  height: 6px;
+  background: #4169e1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.c_top-text {
+  margin: 32px auto;
+  padding: 0 40px;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
