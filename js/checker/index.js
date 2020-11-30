@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll('.l_checker__sec').forEach(item => {
 		item.style.height = vh + "px";
 	})
+	document.querySelector('.l_checker__info').style.height = vh + "px";
 });
 
 function no_scroll() {
