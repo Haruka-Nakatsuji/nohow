@@ -2,7 +2,6 @@
 
 @import "../object/component";
 
-
 .p_hero {
   &__catch {
     position: absolute;
@@ -222,14 +221,13 @@
 // }
 
 .p_fashion {
-
   &__item {
     position: relative;
-//    margin: 0 8px 32px;
+    //    margin: 0 8px 32px;
     margin: 32px auto;
     width: 80%;
     height: 160px;
-//    max-width: 180px;
+    //    max-width: 180px;
     overflow: hidden;
     background-color: rgba($color: #000000, $alpha: 0.2);
 
@@ -267,7 +265,6 @@
 }
 
 .p_read {
-  
   &__img {
     display: block;
     width: 240px;
@@ -306,7 +303,7 @@
     width: 60%;
     // height: 100px;
     padding: 32px 16px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.1);
@@ -351,27 +348,25 @@
 }
 
 .p_footer {
-
-  
   &__zozo {
     width: 280px;
   }
-  
+
   &__title {
     margin: 32px 0 8px;
     font-size: 1.15rem;
   }
-  
+
   &__link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-      a {
-        margin: 4px 8px;
-        text-decoration: underline;
-      }
-    
+    a {
+      margin: 4px 8px;
+      text-decoration: underline;
+    }
+
     &--other {
       @extend .p_footer__link;
       margin: 8px;
@@ -385,7 +380,7 @@
     i {
       padding: 4px;
       margin-left: 4px;
-      font-size: .8rem;
+      font-size: 0.8rem;
       font-weight: bold;
       border-radius: 50%;
       background: #ccc;
@@ -402,13 +397,12 @@
       display: block;
       letter-spacing: 0;
       line-height: 1rem;
-      font-size: .5rem;
+      font-size: 0.5rem;
     }
   }
 }
 
 .p_checker {
-
   &__title {
     font-size: 1.5rem;
     color: $main_color;
@@ -431,7 +425,7 @@
     }
 
     li + li {
-      margin-top: .6rem;
+      margin-top: 0.6rem;
     }
   }
 
@@ -455,7 +449,7 @@
   }
 
   &__equal {
-    width: .8rem;
+    width: 0.8rem;
     height: 1.2rem;
     margin: 6px auto;
     border-left: 4px solid currentColor;
@@ -480,7 +474,6 @@
   }
 
   &__btn {
-
     li {
       @include main-button;
       margin-bottom: 16px;
@@ -497,13 +490,13 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left:0;
+    left: 0;
     background: #fff;
     z-index: 500;
 
     &.active {
       display: block;
-      animation: ganimation .8s forwards;
+      animation: ganimation 0.8s forwards;
     }
   }
 }

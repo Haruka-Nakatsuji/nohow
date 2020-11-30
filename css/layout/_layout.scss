@@ -41,7 +41,6 @@
 }
 
 .l_checker {
-
   &__info {
     display: flex;
     justify-content: center;
@@ -55,7 +54,7 @@
     width: 90%;
     // height: 90%;
     padding: 40px 24px;
-    background: rgba($color: #fff, $alpha: .8);
+    background: rgba($color: #fff, $alpha: 0.8);
     text-align: center;
   }
 

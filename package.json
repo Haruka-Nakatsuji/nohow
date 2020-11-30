@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \”ウンウンN”,
-    "format": "prettier --write 'css/**/*.scss'"
+    "format": "prettier --write 'css/*.scss'"
   },
   "author": "",
   "license": "ISC",
