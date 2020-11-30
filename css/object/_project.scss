@@ -403,8 +403,10 @@
 }
 
 .p_checker {
+
   &__title {
-    font-size: 1.5rem;
+    margin-top: 24px;
+    font-size: 1.35rem;
     color: $main_color;
     font-weight: bold;
     white-space: nowrap;
@@ -417,7 +419,8 @@
   }
 
   &__info-ul {
-    margin: 24px 16px;
+    display: inline-block;
+    margin: 32px auto 0;
     text-align: left;
 
     li {
@@ -431,9 +434,9 @@
 
   &__strong {
     display: block;
-    margin: 24px 0;
+    margin: 32px 0;
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
 
     img {
       width: auto;
@@ -444,14 +447,14 @@
 
     &--second {
       @extend .p_checker__strong;
-      margin-top: 0;
+      margin-top: 24px;
     }
   }
 
   &__equal {
     width: 0.8rem;
     height: 1.2rem;
-    margin: 6px auto;
+    margin: 4px auto;
     border-left: 4px solid currentColor;
     border-right: 4px solid currentColor;
   }
@@ -462,13 +465,14 @@
 
   &__down {
     @include triangle;
-    margin: 32px auto 0;
+    margin: 24px auto 0;
     border-color: $main_color transparent transparent transparent;
   }
 
   &__gocheck {
     @include main-button;
-    font-size: 2.5rem;
+    margin-top: 32px;
+    font-size: 2rem;
     width: 90%;
     border-radius: 8px;
   }

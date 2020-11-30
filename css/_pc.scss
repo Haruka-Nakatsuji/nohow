@@ -2,7 +2,7 @@
 
 @import "./object/component";
 
-// @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
 //     .p_nav {
 //         width: 80px;
@@ -77,4 +77,8 @@
 //     .l_main {
 //         background-size: 50% auto;
 //     }
-// }
+
+	.l_checker__info {
+		height: 100vh;
+	}
+}
