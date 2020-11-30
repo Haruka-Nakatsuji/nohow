@@ -409,6 +409,76 @@
 
 .p_checker {
 
+  &__title {
+    font-size: 1.5rem;
+    color: $main_color;
+    font-weight: bold;
+    white-space: nowrap;
+
+    img {
+      width: auto;
+      height: 1em;
+      padding-right: 8px;
+    }
+  }
+
+  &__info-ul {
+    margin: 24px 16px;
+    text-align: left;
+
+    li {
+      list-style: inside;
+    }
+
+    li + li {
+      margin-top: .6rem;
+    }
+  }
+
+  &__strong {
+    display: block;
+    margin: 24px 0;
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+    img {
+      width: auto;
+      height: 1em;
+      padding-right: 8px;
+      vertical-align: middle;
+    }
+
+    &--second {
+      @extend .p_checker__strong;
+      margin-top: 0;
+    }
+  }
+
+  &__equal {
+    width: .8rem;
+    height: 1.2rem;
+    margin: 6px auto;
+    border-left: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+  }
+
+  &__sal {
+    color: #ff0000;
+  }
+
+  &__down {
+    @include triangle;
+    margin: 32px auto 0;
+    border-color: $main_color transparent transparent transparent;
+  }
+
+  &__gocheck {
+    @include main-button;
+    font-size: 2.5rem;
+    width: 90%;
+    border-radius: 8px;
+  }
+
   &__btn {
 
     li {
