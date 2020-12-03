@@ -1213,6 +1213,10 @@ img {
   vertical-align: middle;
 }
 
+.p_checker__strong--second {
+  font-size: 1.35rem;
+}
+
 .p_checker__equal {
   width: 0.8rem;
   height: 1.2rem;
