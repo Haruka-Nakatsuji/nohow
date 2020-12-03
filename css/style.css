@@ -621,6 +621,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
   background: url("../src/images/model_bg.jpg") no-repeat center;
   background-size: cover;
 }
@@ -1187,7 +1188,7 @@ img {
 
 .p_checker__info-ul {
   display: inline-block;
-  margin: 32px auto 0;
+  margin: 16px auto 0;
   text-align: left;
 }
 
@@ -1201,9 +1202,9 @@ img {
 
 .p_checker__strong, .p_checker__strong--second {
   display: block;
-  margin: 32px 0;
+  margin: 16px 0;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.25rem;
 }
 
 .p_checker__strong img, .p_checker__strong--second img {
@@ -1211,10 +1212,6 @@ img {
   height: 1em;
   padding-right: 8px;
   vertical-align: middle;
-}
-
-.p_checker__strong--second {
-  margin-top: 24px;
 }
 
 .p_checker__equal {
@@ -1234,7 +1231,7 @@ img {
   height: 0;
   border-style: solid;
   border-width: 32px 72px 0px 72px;
-  margin: 24px auto 0;
+  margin: 16px auto;
   border-color: #4169e1 transparent transparent transparent;
 }
 
@@ -1251,7 +1248,7 @@ img {
   max-width: 800px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  margin-top: 32px;
+  margin: 16px auto 0;
   font-size: 2rem;
   width: 90%;
   border-radius: 8px;

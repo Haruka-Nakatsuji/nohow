@@ -420,7 +420,7 @@
 
   &__info-ul {
     display: inline-block;
-    margin: 32px auto 0;
+    margin: 16px auto 0;
     text-align: left;
 
     li {
@@ -434,9 +434,9 @@
 
   &__strong {
     display: block;
-    margin: 32px 0;
+    margin: 16px 0;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2.25rem;
 
     img {
       width: auto;
@@ -447,7 +447,7 @@
 
     &--second {
       @extend .p_checker__strong;
-      margin-top: 24px;
+      // margin-top: 24px;
     }
   }
 
@@ -465,13 +465,13 @@
 
   &__down {
     @include triangle;
-    margin: 24px auto 0;
+    margin: 16px auto;
     border-color: $main_color transparent transparent transparent;
   }
 
   &__gocheck {
     @include main-button;
-    margin-top: 32px;
+    margin: 16px auto 0;
     font-size: 2rem;
     width: 90%;
     border-radius: 8px;
