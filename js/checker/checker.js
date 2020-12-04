@@ -36,13 +36,13 @@ li.forEach(item => {
 
 function checkType(item) {
 	switch (item.dataset.type) {
-		case 'a':
+		case 's':
 			typeA += Number(item.dataset.point);
 			break;
-		case 'i':
+		case 'w':
 			typeI += Number(item.dataset.point);
 			break;
-		case 'y':
+		case 'n':
 			typeY += Number(item.dataset.point);
 			break;
 	}
