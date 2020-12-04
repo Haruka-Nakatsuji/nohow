@@ -1,8 +1,8 @@
 'use strict';
 
-let typeA = 0;
-let typeI = 0;
-let typeY = 0;
+let typeS = 0;
+let typeW = 0;
+let typeN = 0;
 
 const vh = window.innerHeight;
 const vw = window.innerWidth;
@@ -32,23 +32,26 @@ li.forEach(item => {
 		checkType(item);
 		window.scrollBy(0 , vh);
 	});
+	item.addEventListener('mouseover', () => {
+		console.log(item.dataset.type);
+	});
 });
 
 function checkType(item) {
 	switch (item.dataset.type) {
 		case 's':
-			typeA += Number(item.dataset.point);
+			typeS += Number(item.dataset.point);
 			break;
 		case 'w':
-			typeI += Number(item.dataset.point);
+			typeW += Number(item.dataset.point);
 			break;
 		case 'n':
-			typeY += Number(item.dataset.point);
+			typeN += Number(item.dataset.point);
 			break;
 	}
-	console.log(typeA);
-	console.log(typeI);
-	console.log(typeY);
+	console.log(typeS);
+	console.log(typeW);
+	console.log(typeN);
 }
 
 function ganimation() {
@@ -66,16 +69,16 @@ document.querySelector('.p_checker__result-btn').addEventListener('click', () =>
 
 function checkTriple() {
 	const randomNumT = Math.floor(Math.random() *3);
-	if(typeA === typeI && typeA === typeY && typeI === typeY) {
+	if(typeS === typeW && typeS === typeN && typeW === typeN) {
 		switch (randomNumT) {
 			case 0:
-				location.href = '../checker/typea.html';
+				location.href = '../checker/typeS.html';
 				break;
 			case 1:
-				location.href = '../checker/typei.html';
+				location.href = '../checker/typeW.html';
 				break;	
 			case 2:
-				location.href = '../checker/typey.html';
+				location.href = '../checker/typeN.html';
 				break;
 		}
 	}
@@ -84,31 +87,31 @@ function checkTriple() {
 
 function checkdouble() {
 	const randomNumD = Math.floor(Math.random() *2);
-	if(typeA === typeI && typeA !== typeY && typeI !== typeY) {
+	if(typeS === typeW && typeS !== typeN && typeW !== typeN) {
 		switch (randomNumD) {
 			case 0:
-				location.href = '../checker/typea.html';
+				location.href = '../checker/typeS.html';
 				break;
 			case 1:
-                location.href = '../checker/typei.html';
+                location.href = '../checker/typeW.html';
 				break;
 		}
-	} else if(typeA === typeY && typeA !== typeI && typeI !== typeY) {
+	} else if(typeS === typeN && typeS !== typeW && typeW !== typeN) {
 		switch (randomNumD) {
 			case 0:
-				location.href = '../checker/typea.html';
+				location.href = '../checker/typeS.html';
 				break;
 			case 1:
-				location.href = '../checker/typey.html';
+				location.href = '../checker/typeN.html';
 				break;
 		}
-	} else if(typeI === typeY && typeA !== typeI && typeI !== typeA) {
+	} else if(typeW === typeN && typeS !== typeW && typeW !== typeS) {
 		switch (randomNumD) {
 			case 0:
-				location.href = '../checker/typei.html';
+				location.href = '../checker/typeW.html';
 				break;
 			case 1:
-				location.href = '../checker/typey.html';
+				location.href = '../checker/typeN.html';
 				break;
 		}
 	}
@@ -116,10 +119,10 @@ function checkdouble() {
 }
 
 function checkSingle() {
-	if(typeA > typeI && typeA > typeY) {
-		location.href = "../checker/typea.html";
-	} else if(typeI > typeA && typeI > typeY) {
-		location.href = "../checker/typei.html";
-	} else if(typeY > typeA && typeY > typeI) {
-		location.href = "../checker/typey.html";
+	if(typeS > typeW && typeS > typeN) {
+		location.href = "../checker/typeS.html";
+	} else if(typeW > typeS && typeW > typeN) {
+		location.href = "../checker/typeW.html";
+	} else if(typeN > typeS && typeN > typeW) {
+		location.href = "../checker/typeN.html";
 	}}
