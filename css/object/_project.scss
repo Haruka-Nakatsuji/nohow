@@ -221,7 +221,6 @@
 // }
 
 .p_fashion {
-
   &__list {
     margin-top: 64px;
   }
@@ -411,7 +410,6 @@
 }
 
 .p_checker {
-
   &__title {
     // margin-top: 24px;
     font-size: 1.35rem;
@@ -515,7 +513,6 @@
 }
 
 .p_result {
-
   &__title {
     margin: 16px 0;
     font-size: 2.5rem;
@@ -550,7 +547,7 @@
 
     &--double {
       @extend .p_result__sub-title;
-      
+
       &::before {
         width: 80% !important;
         height: 4px !important;
@@ -619,7 +616,7 @@
       content: "";
       display: inline-block;
       width: 2px;
-      height: .8em;
+      height: 0.8em;
       margin-right: 8px;
       background: currentColor;
       transform: rotate(-15deg);
@@ -629,7 +626,7 @@
       content: "";
       display: inline-block;
       width: 2px;
-      height: .8em;
+      height: 0.8em;
       margin-left: 6px;
       background: currentColor;
       transform: rotate(15deg);
@@ -637,15 +634,14 @@
   }
 
   &__item-list {
-
     li {
       width: 85%;
       margin: 0 auto 16px;
       list-style: none;
-      transition: .3s all;
+      transition: 0.3s all;
 
       &:hover {
-        opacity: .6;
+        opacity: 0.6;
       }
     }
 
@@ -691,7 +687,7 @@
       position: relative;
       bottom: 28px;
       right: 13px;
-      font-size: .9rem;
+      font-size: 0.9rem;
       white-space: nowrap;
       font-weight: bold;
       color: #fff;
@@ -704,21 +700,30 @@
   }
 
   &__lg-list {
-    margin: 8px;
+    margin: 0 16px;
   }
 
   &__lg-item {
-    display: flex;
-    align-items: center;
+    display: block;
     padding: 16px;
+
+    a {
+      display: flex;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
 
     &:not(:first-child) {
       border-top: 2px solid #eee;
     }
-    
+
     img {
-      width: 120px;
-      height: 120px;
+      width: 112px;
+      height: 112px;
       overflow: hidden;
       object-fit: cover;
       object-position: top;
@@ -733,14 +738,23 @@
       overflow: hidden;
       color: #ccc;
 
-      &::after{
-        background: linear-gradient(to right, rgba(100, 180, 225, 0) 0%, #fff 50%, #fff 100%);
+      &::after {
+        background: linear-gradient(
+          to right,
+          rgba(100, 180, 225, 0) 0%,
+          #fff 50%,
+          #fff 100%
+        );
         bottom: 0;
         content: "";
         height: calc(1.1rem * 1.2);
         position: absolute;
         right: 0;
         width: 60px;
+      }
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
