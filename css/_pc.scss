@@ -36,8 +36,11 @@
   }
 
   .p_nav {
+    // display: none;
+
     &__contents {
-      bottom: 120px;
+        // display: block;
+        bottom: 120px;
     }
   }
 
