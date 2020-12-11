@@ -547,6 +547,26 @@
     @extend .c_index;
     margin: 40px auto !important;
     font-size: 3rem;
+
+    &--double {
+      @extend .p_result__sub-title;
+      
+      &::before {
+        width: 80% !important;
+        height: 4px !important;
+      }
+
+      &::after {
+        content: "";
+        top: -8px;
+        left: 50%;
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        background: $main_color;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 
   &__section {
@@ -681,5 +701,52 @@
   &__sum {
     font-size: 2.5rem;
     font-weight: bold;
+  }
+
+  &__lg-list {
+    margin: 8px;
+  }
+
+  &__lg-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    &:not(:first-child) {
+      border-top: 2px solid #eee;
+    }
+    
+    img {
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    p {
+      position: relative;
+      height: 1.1rem * 1.2 * 2;
+      margin: 8px 0 0;
+      font-size: 1.1rem;
+      line-height: 1.25rem;
+      overflow: hidden;
+      color: #ccc;
+
+      &::after{
+        background: linear-gradient(to right, rgba(100, 180, 225, 0) 0%, #fff 50%, #fff 100%);
+        bottom: 0;
+        content: "";
+        height: calc(1.1rem * 1.2);
+        position: absolute;
+        right: 0;
+        width: 60px;
+      }
+    }
+  }
+
+  &__lg-wrap {
+    flex: 1;
+    padding-left: 16px;
   }
 }
