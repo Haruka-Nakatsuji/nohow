@@ -495,6 +495,22 @@
     }
   }
 
+  &__prev {
+    width: 80px;
+    height: 80px;
+    margin-top: 32px;
+    background: lighten($main_color, 35);
+    border-radius: 50%;
+    color: $main_color;
+    font-size: .9rem;
+    border: $main_color 1px solid;
+    transition: .1s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
   &__frontg {
     display: none;
     position: fixed;
@@ -508,6 +524,41 @@
     &.active {
       display: block;
       animation: ganimation 0.8s forwards;
+    }
+  }
+
+  &__go-result {
+    padding: 64px 0;
+    color: #444;
+    font-size: 2rem;
+    font-weight: normal;
+
+    &--anime {
+      position: relative;
+      padding: 64px 0;
+      color: $main_color;
+      font-size: 3rem;
+      animation: resultAnime 1.2s infinite alternate;
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 8%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 20vw;
+        height: 2px;
+        background: linear-gradient(to left,transparent,$main_color,transparent);
+      }
+
+      &::after {
+        right: 8%;
+        left: auto;
+      }
     }
   }
 }

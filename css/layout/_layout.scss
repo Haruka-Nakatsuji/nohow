@@ -81,7 +81,7 @@
       display: inline-block;
       width: 16px;
       height: 16px;
-      margin: 0 2px 16px;
+      margin: 0 2px 32px;
       border: solid #ccc 1px;
       border-radius: 50%;
 
@@ -89,5 +89,9 @@
         background: $main_color;
       }
     }
+  }
+
+  &__result {
+    cursor: pointer;
   }
 }

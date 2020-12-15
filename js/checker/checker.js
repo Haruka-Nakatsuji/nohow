@@ -3,10 +3,13 @@
 let typeS = 0;
 let typeW = 0;
 let typeN = 0;
+let saveData = [];
+let result = {};
 
 const vh = window.innerHeight;
 const vw = window.innerWidth;
 const li = document.querySelectorAll('.p_checker__btn li');
+const goPrev = document.querySelectorAll('.p_checker__prev');
 
 window.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll('.l_checker__sec').forEach(item => {
@@ -25,6 +28,7 @@ function scroll_control(event) {
 }
 no_scroll();
 
+///////////////////////////////////////////////////////
 
 li.forEach(item => {
 	item.addEventListener('click', () => {
@@ -32,27 +36,10 @@ li.forEach(item => {
 		checkType(item);
 		window.scrollBy(0 , vh);
 	});
-	item.addEventListener('mouseover', () => {
-		console.log(item.dataset.type);
-	});
+	// item.addEventListener('mouseover', () => {
+	// 	console.log(item.dataset.type);
+	// });
 });
-
-function checkType(item) {
-	switch (item.dataset.type) {
-		case 's':
-			typeS += Number(item.dataset.point);
-			break;
-		case 'w':
-			typeW += Number(item.dataset.point);
-			break;
-		case 'n':
-			typeN += Number(item.dataset.point);
-			break;
-	}
-	console.log(typeS);
-	console.log(typeW);
-	console.log(typeN);
-}
 
 function ganimation() {
     document.querySelector('.p_checker__frontg').classList.add('active');
@@ -61,11 +48,60 @@ function ganimation() {
     }, 500);
 }
 
-document.querySelector('.p_checker__result-btn').addEventListener('click', () => {
+function checkType(item) {
+	saveData.push(item.dataset.type);
+	console.log(saveData);
+}
+
+goPrev.forEach(item => {
+	item.addEventListener('click', () => {
+		ganimation();
+		saveData.pop();
+		window.scrollBy(0 , -vh);
+	});
+});
+
+// result ///////////////////////////////////////////////////
+
+document.querySelector('.l_checker__result').addEventListener('click', () => {
+	checkResult();
+
+	if (result['s']) {
+		for (let i = 0; i < result.s.length; i++) {
+			typeS++;
+		}
+	}
+
+	if (result['w']) {
+		for (let i = 0; i < result.w.length; i++) {
+			typeW++;
+		}
+	}
+
+	if (result['n']) {
+		for (let i = 0; i < result.n.length; i++) {
+			typeN++;
+		}
+	}
+
+	console.log([typeS,typeW,typeN]);
 	checkTriple();
 	checkdouble();
 	checkSingle();
 });
+
+function checkResult() {
+	for(let key of saveData) {
+		result[key] = saveData.filter(x => {return x == key});
+		//nの場合 result['n'] = saveData.filter((n) => {return n == key});
+		//       =result.n。この場合はStringの変数なので''いらない。"n"と合っているもののみ抽出(x)
+	}
+	return result;
+}
+
+
+
+// random（無理やり） //////////////////////////////////////
 
 function checkTriple() {
 	const randomNumT = Math.floor(Math.random() *3);
@@ -126,3 +162,10 @@ function checkSingle() {
 	} else if(typeN > typeS && typeN > typeW) {
 		location.href = "../checker/typeN.html";
 	}}
+
+
+// 結果を見る /////////////////////////////////////
+
+if(navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+	document.querySelector('.p_checker__go-result--anime').textContent = 'TAP';
+}

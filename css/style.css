@@ -577,6 +577,18 @@ img {
   text-align: center;
 }
 
+@-webkit-keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
+}
+
 .l_sam {
   height: 100vh;
 }
@@ -665,7 +677,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin: 0 2px 16px;
+  margin: 0 2px 32px;
   border: solid #ccc 1px;
   border-radius: 50%;
 }
@@ -674,60 +686,8 @@ img {
   background: #4169e1;
 }
 
-@keyframes openMenu {
-  0% {
-    display: inline-block;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-@keyframes jumpGocheck {
-  100% {
-    -webkit-transform: translateX(-50%) scale(1.1, 1.1);
-            transform: translateX(-50%) scale(1.1, 1.1);
-  }
-}
-
-@keyframes ganimation {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.c_index, .p_result__sub-title, .p_result__sub-title--double {
-  position: relative;
-  text-align: center;
-  margin-top: 110px;
-  margin-bottom: 56px;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
-.c_index::before, .p_result__sub-title::before, .p_result__sub-title--double::before {
-  content: "";
-  bottom: -16px;
-  left: 50%;
-  position: absolute;
-  width: 160px;
-  height: 6px;
-  background: #4169e1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.c_top-text {
-  margin: 32px auto;
-  padding: 0 40px;
-  font-size: 1rem;
-  line-height: 2rem;
-  text-align: center;
+.l_checker__result {
+  cursor: pointer;
 }
 
 @keyframes openMenu {
@@ -784,6 +744,74 @@ img {
   font-size: 1rem;
   line-height: 2rem;
   text-align: center;
+}
+
+@keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    display: inline-block;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes jumpGocheck {
+  100% {
+    -webkit-transform: translateX(-50%) scale(1.1, 1.1);
+            transform: translateX(-50%) scale(1.1, 1.1);
+  }
+}
+
+@keyframes ganimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.c_index, .p_result__sub-title, .p_result__sub-title--double {
+  position: relative;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 56px;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.c_index::before, .p_result__sub-title::before, .p_result__sub-title--double::before {
+  content: "";
+  bottom: -16px;
+  left: 50%;
+  position: absolute;
+  width: 160px;
+  height: 6px;
+  background: #4169e1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.c_top-text {
+  margin: 32px auto;
+  padding: 0 40px;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
 }
 
 .p_hero__catch {
@@ -1294,6 +1322,23 @@ img {
   opacity: 0.8;
 }
 
+.p_checker__prev {
+  width: 80px;
+  height: 80px;
+  margin-top: 32px;
+  background: #dbe3f9;
+  border-radius: 50%;
+  color: #4169e1;
+  font-size: .9rem;
+  border: #4169e1 1px solid;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.p_checker__prev:hover {
+  opacity: .8;
+}
+
 .p_checker__frontg {
   display: none;
   position: fixed;
@@ -1309,6 +1354,41 @@ img {
   display: block;
   -webkit-animation: ganimation 0.8s forwards;
           animation: ganimation 0.8s forwards;
+}
+
+.p_checker__go-result {
+  padding: 64px 0;
+  color: #444;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.p_checker__go-result--anime {
+  position: relative;
+  padding: 64px 0;
+  color: #4169e1;
+  font-size: 3rem;
+  -webkit-animation: resultAnime 1.2s infinite alternate;
+          animation: resultAnime 1.2s infinite alternate;
+}
+
+.p_checker__go-result--anime::before, .p_checker__go-result--anime::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 20vw;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(#4169e1), to(transparent));
+  background: linear-gradient(to left, transparent, #4169e1, transparent);
+}
+
+.p_checker__go-result--anime::after {
+  right: 8%;
+  left: auto;
 }
 
 .p_result__title {
@@ -1646,6 +1726,12 @@ img {
   font-size: 1rem;
   line-height: 2rem;
   text-align: center;
+}
+
+@keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -80,3 +80,10 @@ $accent_color: #d62c49;
   border-style: solid;
   border-width: 32px 72px 0px 72px;
 }
+
+
+@keyframes resultAnime {
+  100% {
+    opacity: 0;
+  }
+}
