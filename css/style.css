@@ -677,7 +677,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin: 0 2px 32px;
+  margin: 0 2px 24px;
   border: solid #ccc 1px;
   border-radius: 50%;
 }
@@ -1325,7 +1325,7 @@ img {
 .p_checker__prev {
   width: 80px;
   height: 80px;
-  margin-top: 32px;
+  margin-top: 16px;
   background: #dbe3f9;
   border-radius: 50%;
   color: #4169e1;
