@@ -58,14 +58,17 @@
   }
 
   &__sec {
+	  position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     text-align: center;
+	flex-direction: column;
   }
 
   &__in {
+	  
     width: 100%;
 
     h2 {

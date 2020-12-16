@@ -496,9 +496,13 @@
   }
 
   &__prev {
+	position: absolute;
+	bottom: 16px;
+	left: 4%;
+//	transform: translateX(-50%);
     width: 80px;
     height: 80px;
-    margin-top: 16px;
+    margin-top: 0px;
     background: lighten($main_color, 35);
     border-radius: 50%;
     color: $main_color;
@@ -509,6 +513,20 @@
     &:hover {
       opacity: .8;
     }
+	  
+	  i {
+		  display: block;
+		  position: absolute;
+		  bottom: 6px;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  font-size: 1.25rem;
+	  }
+	  
+	  &--tp {
+		  @extend .p_checker__prev;
+		  visibility: hidden;
+	  }
   }
 
   &__frontg {
