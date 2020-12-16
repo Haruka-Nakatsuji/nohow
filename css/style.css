@@ -853,13 +853,14 @@ img {
   display: inline-block;
   margin-top: 32px; }
   .p_footer__gotop i {
-    padding: 4px;
+    padding: 3px 4px 0px;
     margin-left: 4px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 50%;
     background: #ccc;
-    color: #fff; }
+    color: #fff;
+    vertical-align: middle; }
 .p_footer__copyright {
   margin-top: 32px;
   padding-top: 16px;

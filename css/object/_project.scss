@@ -385,13 +385,14 @@
     margin-top: 32px;
 
     i {
-      padding: 4px;
+      padding: 3px 4px 0px;
       margin-left: 4px;
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: bold;
       border-radius: 50%;
       background: #ccc;
       color: #fff;
+		vertical-align: middle;
     }
   }
 
