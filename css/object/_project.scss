@@ -399,7 +399,7 @@
     margin-top: 32px;
 
     i {
-      padding: 3px 4px 0px;
+      padding: 4px 4px 0px;
       margin-left: 4px;
       font-size: 1rem;
       font-weight: bold;
@@ -849,6 +849,7 @@
 
 .p_he-title {
   @include titles;
+  margin-top: 32px;
 }
 
 .p_he-serif {
@@ -858,7 +859,8 @@
   text-align: center;
 
   &__2 {
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
     text-align: center;
 
     &::before {
@@ -889,17 +891,26 @@
     margin: 0 4px;
     vertical-align: middle;
   }
+
+  &--mar {
+    @extend .p_he-topsentence;
+    margin-top: 16px;
+  }
 }
 
-.p_he-cards {
-  //as
-}
+// .p_he-cards {
+//   /* as */
+// }
 
 .p_he-card {
   width: 80%;
-  margin: 16px auto;
+  margin: auto;
   list-style: none;
   overflow: hidden;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
 
   &__title {
     position: relative;
@@ -925,6 +936,7 @@
       color: #fff;
       background: $main_color;
       border: 1px solid $main_color;
+      cursor: default;
 
       span {
         // border-color: #fff transparent transparent transparent;
@@ -950,13 +962,14 @@
 
   &__admin {
     display: flex;
+    align-items: center;
     margin: 0 auto 16px;
     font-size: 1.15rem;
     max-width: 260px;
 
     img {
-      width: 80px;
-      height: auto;
+      width: 30%;
+      height: 30%;
       margin-right: 16px;
     }
 
@@ -970,5 +983,64 @@
 
   p  span{
     color: $accent-color;
+  }
+
+  &__link {
+    display: block;
+    padding: 8px;
+    margin-top: 16px;
+    text-align: center;
+    border: 2px solid;
+    font-size: 1.25rem;
+    background: lighten($main_color, 35);
+    color: $main_color;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+.p_he-sub-title {
+  @extend .c_index;
+  margin-top: 64px !important;
+}
+
+.p_he-form {
+  &__warn {
+    margin-top: 16px;
+    font-size: .8rem;
+    line-height: 1rem;
+    text-align: center;
+    color: lighten($color: #454555, $amount: 20);
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    text-align: center;
+
+    span {
+      font-size: .8rem;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 120px;
+    padding: 16px;
+    margin-top: 8px;
+    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.4) inset;
+    border-radius: 8px;
+
+    &:focus {
+      box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.4) inset;
+    }
+  }
+
+  &__submit {
+    @include main-button;
+    width: 50%;
+    margin-top: 16px;
+    font-size: 1rem;
   }
 }

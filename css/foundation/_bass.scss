@@ -11,6 +11,10 @@
     url("../../src/font/font_1_honokamarugo_1.1.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: "Honoka Maru", "筑紫A丸ゴシック", Arial,
