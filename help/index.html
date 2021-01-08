@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NO-HOW｜お悩み解決</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header class="l_header">
+        <a href="../index.html"
+          ><img src="../src/images/logo.png" alt="NO-HOW"
+        /></a>
+    </header>
+    <main class="main">
+    <h1 class="p_he-title">お悩み解決</h1>
+    <section class="l_he-section">
+        <strong class="p_he-serif">「あなたのお悩みもきっとここに」</strong>
+        <p class="p_he-topsentence">
+            たくさんの<img src="../src/images/logo.png" alt="NO-HOW">ユーザーから<br>
+            集まったファッションのお悩みを、<br>
+            Q&A方式で掲載しています。
+        </p>
+    </section>
+    <section class="l_he-section">
+        <p class="p_he-serif__2">タップで回答を表示！</p>
+        <ul class="p_he-cards">
+            <li class="p_he-card">
+                <div class="p_he-card__title">おしゃれな服って高くない？<span></span></div>
+                <div class="p_he-card__content">
+                    <div class="p_he-card__admin">
+                        <img src="../src/images/face2.png" alt="NO-HOW"/>
+                        <p>おっしゃる通りです。<br>お値段張りますよね。</p>
+                    </div>
+                    <p>
+                        ご予算の都合もあると思いますが、<span>1,500円未満</span>でも素敵なデザインの服がたくさんございますよ！<br>
+                        UNIQLO、GUも捨てがたいショップです。無地の服が多く、お求め安い価格なのでファッション初心者にもおすすめです！
+                    </p>
+                </div>
+            </li>
+            <li class="p_he-card">
+                <div class="p_he-card__title">おしゃれな服って高くない？<span></span></div>
+                <div class="p_he-card__content">
+                    <div class="p_he-card__admin">
+                        <img src="../src/images/face2.png" alt="NO-HOW"/>
+                        <p>おっしゃる通りです。<br>お値段張りますよね。</p>
+                    </div>
+                    <p>
+                        ご予算の都合もあると思いますが、<span>1,500円未満</span>でも素敵なデザインの服がたくさんございますよ！<br>
+                        UNIQLO、GUも捨てがたいショップです。無地の服が多く、お求め安い価格なのでファッション初心者にもおすすめです！
+                    </p>
+                </div>
+            </li>
+            <li class="p_he-card">
+                <div class="p_he-card__title">おしゃれな服って高くない？<span></span></div>
+                <div class="p_he-card__content">
+                    <div class="p_he-card__admin">
+                        <img src="../src/images/face2.png" alt="NO-HOW"/>
+                        <p>おっしゃる通りです。<br>お値段張りますよね。</p>
+                    </div>
+                    <p>
+                        ご予算の都合もあると思いますが、<span>1,500円未満</span>でも素敵なデザインの服がたくさんございますよ！<br>
+                        UNIQLO、GUも捨てがたいショップです。無地の服が多く、お求め安い価格なのでファッション初心者にもおすすめです！
+                    </p>
+                </div>
+            </li>
+            <li class="p_he-card">
+                <div class="p_he-card__title">おしゃれな服って高くない？<span></span></div>
+                <div class="p_he-card__content">
+                    <div class="p_he-card__admin">
+                        <img src="../src/images/face2.png" alt="NO-HOW"/>
+                        <p>おっしゃる通りです。<br>お値段張りますよね。</p>
+                    </div>
+                    <p>
+                        ご予算の都合もあると思いますが、<span>1,500円未満</span>でも素敵なデザインの服がたくさんございますよ！<br>
+                        UNIQLO、GUも捨てがたいショップです。無地の服が多く、お求め安い価格なのでファッション初心者にもおすすめです！
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <script>
+        //お悩み解決のトグル
+
+        document.querySelectorAll('.p_he-card__title').forEach( item => {
+            item.addEventListener('click', (e) => {
+                document.querySelectorAll('.p_he-card__title').forEach(item => item.classList.remove('active'));
+                document.querySelectorAll('.p_he-card__content').forEach(item => item.classList.remove('active'));
+                e.target.cslassList.add('active');
+                e.target.parentElement.lastElementChild.classList.add('active');
+                //一旦親にいかして、最後の子要素を取得している
+            });
+        });
+
+
+    </script>
+</body>
+</html>

@@ -3,13 +3,12 @@
 @import "./object/component";
 
 @media screen and (min-width: 1024px) {
-  .p_nav {
-    width: 80px;
-    height: 80px;
+  .l_pc-nav {
+    display: block;
+  }
 
-    span {
-      height: 6px;
-    }
+  .p_nav {
+    display: none;
   }
 
   .p_hero {

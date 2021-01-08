@@ -98,3 +98,15 @@
     cursor: pointer;
   }
 }
+
+.l_pc-nav {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 65%;
+  z-index: 100;
+}
+
+.l_he-section {
+  margin: 32px auto;
+}

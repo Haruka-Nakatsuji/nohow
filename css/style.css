@@ -589,6 +589,20 @@ img {
   }
 }
 
+@-webkit-keyframes openHelp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes openHelp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .l_sam {
   height: 100vh;
 }
@@ -695,6 +709,18 @@ img {
   cursor: pointer;
 }
 
+.l_pc-nav {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 65%;
+  z-index: 100;
+}
+
+.l_he-section {
+  margin: 32px auto;
+}
+
 @keyframes openMenu {
   0% {
     display: inline-block;
@@ -757,6 +783,13 @@ img {
   }
 }
 
+@keyframes openHelp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @keyframes openMenu {
   0% {
     display: inline-block;
@@ -816,6 +849,13 @@ img {
 @keyframes resultAnime {
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes openHelp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -995,6 +1035,17 @@ img {
 .p_nav__item.open:last-child {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+}
+
+.p_pc-nav__contents {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: #4169e1;
+}
+
+.p_pc-nav__item:not(:first-child) {
+  margin-top: 16px;
 }
 
 .p_scroll {
@@ -1415,10 +1466,10 @@ img {
 }
 
 .p_result__title {
-  margin: 16px 0;
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  margin: 16px 0;
 }
 
 .p_result__bone-type {
@@ -1695,6 +1746,137 @@ img {
   padding-left: 16px;
 }
 
+.p_he-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p_he-serif {
+  display: block;
+  margin: 16px auto;
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+.p_he-serif__2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p_he-serif__2::before, .p_he-serif__2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  border-radius: 2px;
+  background: currentColor;
+  margin: 0 16px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.p_he-serif__2::after {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.p_he-topsentence {
+  text-align: center;
+}
+
+.p_he-topsentence img {
+  display: inline;
+  width: auto;
+  height: 1em;
+  margin: 0 4px;
+  vertical-align: middle;
+}
+
+.p_he-card {
+  width: 80%;
+  margin: 16px auto;
+  list-style: none;
+  overflow: hidden;
+}
+
+.p_he-card__title {
+  position: relative;
+  padding: 16px 32px;
+  border: 1px solid;
+  cursor: pointer;
+  background: #ffffff;
+  z-index: 2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.p_he-card__title span {
+  position: absolute;
+  right: 24px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 14px 0 14px;
+  border-color: #4169e1 transparent transparent transparent;
+}
+
+.p_he-card__title.active {
+  color: #fff;
+  background: #4169e1;
+  border: 1px solid #4169e1;
+}
+
+.p_he-card__title.active span {
+  border: none;
+}
+
+.p_he-card__content {
+  display: none;
+  -webkit-transform: translateY(calc(-100% + -52px));
+          transform: translateY(calc(-100% + -52px));
+  padding: 16px;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.p_he-card__content.active {
+  display: block;
+  -webkit-animation: openHelp .5s forwards;
+          animation: openHelp .5s forwards;
+}
+
+.p_he-card__admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 16px;
+  font-size: 1.15rem;
+  max-width: 260px;
+}
+
+.p_he-card__admin img {
+  width: 80px;
+  height: auto;
+  margin-right: 16px;
+}
+
+.p_he-card__admin p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.p_he-card p span {
+  color: #d62c49;
+}
+
 @keyframes openMenu {
   0% {
     display: inline-block;
@@ -1757,13 +1939,19 @@ img {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .p_nav {
-    width: 80px;
-    height: 80px;
+@keyframes openHelp {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
-  .p_nav span {
-    height: 6px;
+}
+
+@media screen and (min-width: 1024px) {
+  .l_pc-nav {
+    display: block;
+  }
+  .p_nav {
+    display: none;
   }
   .p_hero__catch {
     right: 25%;
