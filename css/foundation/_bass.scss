@@ -1,14 +1,47 @@
 @charset "UTF-8";
 @import "./destyle";
 
+// @font-face {
+//   font-family: "Honoka Maru";
+//   src: url("https://dl.dropboxusercontent.com/s/a78q5udslq63gbn/font_1_honokamarugo_1.1.woff")
+//       format("woff"),
+//     url("https://dl.dropboxusercontent.com/s/gab5nkdwx2hqstq/font_1_honokamarugo_1.1.ttf")
+//       format("truetype"),
+//     url("../../src/font/font_1_honokamarugo_1.1.woff") format("woff"),
+//     url("../../src/font/font_1_honokamarugo_1.1.ttf") format("truetype");
+// }
+
 @font-face {
-  font-family: "Honoka Maru";
-  src: url("https://dl.dropboxusercontent.com/s/a78q5udslq63gbn/font_1_honokamarugo_1.1.woff")
+  font-family: "Iroha Maru";
+  src: url("https://dl.dropboxusercontent.com/s/nc6ug79knokcvz2/irohamaru-Light.woff")
       format("woff"),
-    url("https://dl.dropboxusercontent.com/s/gab5nkdwx2hqstq/font_1_honokamarugo_1.1.ttf")
+    url("https://dl.dropboxusercontent.com/s/qck3x69a8bw0xax/irohamaru-Light.ttf")
       format("truetype"),
-    url("../../src/font/font_1_honokamarugo_1.1.woff") format("woff"),
-    url("../../src/font/font_1_honokamarugo_1.1.ttf") format("truetype");
+    url("../../src/font/irohamaru-Light.woff") format("woff"),
+    url("../../src/font/irohamaru-Light.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Iroha Maru";
+  src: url("https://dl.dropboxusercontent.com/s/pmfl5mee8fx747d/irohamaru-Regular.woff")
+      format("woff"),
+    url("https://dl.dropboxusercontent.com/s/rmou1v9s15gqupk/irohamaru-Regular.ttf")
+      format("truetype"),
+    url("../../src/font/irohamaru-Regular.woff") format("woff"),
+    url("../../src/font/irohamaru-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Iroha Maru";
+  src: url("https://dl.dropboxusercontent.com/s/w15lbwt20rq7ftt/irohamaru-Medium.woff")
+      format("woff"),
+    url("https://dl.dropboxusercontent.com/s/uqvyyxfmigoz1zb/irohamaru-Medium.ttf")
+      format("truetype"),
+    url("../../src/font/irohamaru-Medium.woff") format("woff"),
+    url("../../src/font/irohamaru-Medium.ttf") format("truetype");
+  font-weight: bold;
 }
 
 html {
@@ -17,10 +50,10 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "Honoka Maru", "筑紫A丸ゴシック", Arial,
+  font-family: "Iroha Maru", "筑紫A丸ゴシック", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: #454555;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 p {

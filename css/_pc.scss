@@ -38,14 +38,14 @@
     // display: none;
 
     &__contents {
-        // display: block;
-        bottom: 120px;
+      // display: block;
+      bottom: 120px;
     }
   }
 
   .l_main {
     background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
-    background-size: contain;
+    background-size: 50% auto;
   }
 
   .l_hero {
@@ -99,9 +99,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .l_main {
-    background-size: 50% auto;
-  }
+  // .l_main {
+  //   background-size: 50% auto;
+  // }
 
   .l_checker__info {
     height: 100vh;
