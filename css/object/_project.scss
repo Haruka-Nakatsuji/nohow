@@ -927,7 +927,7 @@
 
   &__title {
     position: relative;
-    padding: 16px 48px 16px 32px;
+    padding: 16px 40px 16px 16px;
     border: 1px solid #ccc;
     cursor: pointer;
     background: #ffffff;
@@ -1059,5 +1059,65 @@
     width: 50%;
     margin-top: 16px;
     font-size: 1rem;
+  }
+}
+
+.p_re-title {
+  @include titles;
+}
+
+.p_re-topsentence {
+  text-align: center;
+
+  &--m {
+    margin-top: 32px;
+  }
+}
+
+.p_re-subtitle {
+  @include c_index;
+  font-size: 1.15rem;
+}
+
+.silhouettesam {
+  text-align: center;
+  background: lighten($color: $main_color, $amount: 20);
+  height: 200px;
+  width: 94%;
+  margin: 16px auto;
+}
+
+.p_re-sil-list {
+
+  width: 74%;
+  margin: 16px auto;
+  padding: 16px;
+  border: 1px solid $main_color;
+  text-align: center;
+  font-size: .8rem;
+  
+  li {
+    list-style: decimal inside;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+      padding-left: 5px;
+    }
+
+    &::marker {
+      padding-right: 16px;
+      color: $main_color;
+    }
+
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+
+.p_re-sil {
+
+  &__item {
+    margin: 32px auto;
   }
 }

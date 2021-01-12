@@ -114,3 +114,18 @@
   width: 70%;
   margin: 32px auto;
 }
+
+.l_re-section {
+  margin: 32px auto;
+  padding: 0 4%;
+}
+
+.l_re-section p span {
+  color: $accent_color;
+}
+
+.l_re-sil {
+  li {
+    list-style: none;
+  }
+}
