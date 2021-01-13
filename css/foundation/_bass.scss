@@ -44,6 +44,13 @@
   font-weight: bold;
 }
 
+* {
+  &::selection {
+    background-color: #4169e1;
+    color: #fff;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

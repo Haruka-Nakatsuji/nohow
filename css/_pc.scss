@@ -11,9 +11,14 @@
     display: none;
   }
 
+  .l_hero {
+    width: 50%;
+    margin-left: auto;
+  }
+
   .p_hero {
     &__catch {
-      right: 25%;
+      right: 50%;
       bottom: none;
       top: 38vh;
       font-size: 1.75rem;
@@ -22,8 +27,8 @@
 
     &__gocheck {
       bottom: 38vh;
-      left: 75%;
-      width: 30%;
+      left: 50%;
+      width: 70%;
       text-align: center;
       background: $main_color;
       color: #fff;

@@ -56,14 +56,17 @@
 
     &:first-child {
       top: 25%;
+      transition: .3s;
     }
 
     &:nth-child(2) {
       top: 50%;
+      transition: .3s;
     }
 
     &:last-child {
       top: 75%;
+      transition: .3s;
     }
 
     &.change {
@@ -81,7 +84,7 @@
 
       &:nth-child(2) {
         transform: translateX(-100%);
-        transition: all 0.3s;
+        transition: all 0.15s;
         opacity: 0;
       }
 
@@ -125,6 +128,7 @@
 
     &:first-child {
       transform: translateY(300px);
+      
     }
 
     &:nth-child(3) {
@@ -167,15 +171,50 @@
 }
 
 .p_pc-nav {
+
   &__contents {
+    position: absolute;
+    bottom: 10%;
+    left: calc(100% - (2rem + 32px + 32px));
     font-size: 2rem;
     font-weight: bold;
-    text-align: left;
-    color: $main_color;
+    color: $text_color;
+    z-index: 100;
   }
 
-  &__item:not(:first-child) {
-    margin-top: 16px;
+  &__item {
+    display: flex;
+    align-items: center;
+    // width: calc(2rem + 32px + 32px);
+    background: #fff;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 1.5s;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    &:hover {
+      transition: .5s;
+      transform: translateX(calc(-100% + (2rem + 32px + 32px)));
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      overflow: hidden;
+    }
+
+    i {
+      padding: 16px 32px;
+      text-align: center;
+      max-width: calc(2rem + 32px + 32px);
+    }
   }
 }
 
@@ -235,7 +274,6 @@
 
 .p_index-subtitle {
   @include c_index;
-  margin-top: 110px;
 }
 
 .p_fashion {
@@ -244,6 +282,7 @@
   }
 
   &__item {
+    display: block;
     position: relative;
     //    margin: 0 8px 32px;
     margin: 16px auto;
@@ -253,18 +292,17 @@
     overflow: hidden;
     background-color: rgba($color: #000000, $alpha: 0.2);
     // transform: skewY(-5deg);
-    white-space: nowrap;
+  }
 
-    img {
-      display: block;
-      object-fit: cover;
-      object-position: center;
-      mix-blend-mode: darken;
-      transition: 0.3s;
+  &__img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: darken;
+    transition: 0.3s;
 
-      &:hover {
-        transform: scale(1.1, 1.1);
-      }
+    &:hover {
+      transform: scale(1.1, 1.1);
     }
   }
 
@@ -272,11 +310,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(3deg);
+    // text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
     z-index: 10;
-    font-size: 1.5rem;
   }
 
   // &__back {
@@ -1163,5 +1200,77 @@
 
   &__text {
     margin: 16px 0;
+  }
+}
+
+.p_re-reco {
+
+  &__title {
+    @include c_index;
+    font-size: 1.35rem;
+  }
+
+  &__list {
+
+    li {
+      margin: 40px 0;
+      list-style: none;
+    }
+
+    img {
+      display: block;
+      width: 240px;
+      height: 240px;
+      margin: 24px auto;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  &__in {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    &::first-letter {
+      vertical-align: text-bottom;
+      font-size: 1.2em;
+      color: $main_color;
+    }
+  }
+
+  &__exp {
+    margin: 24px 0;
+  }
+
+  &__btn {
+    @include main-button;
+    font-size: 1.25rem;
+
+    &::after {
+      position: absolute;
+    }
+
+    &--m {
+      @extend .p_re-reco__btn;
+      margin-top: 16px;
+    }
+  }
+
+  &__note {
+    display: block;
+    margin: 16px;
+    font-size: .8rem;
+    color: lighten($color: $text_color, $amount: 20);
+    text-align: center;
+
+  }
+}
+
+.p_re-taste {
+
+  &__title {
+    @include c_index;
+    font-size: 1.35rem;
   }
 }

@@ -30,7 +30,8 @@
 // }
 
 .l_top-section {
-  padding: 2%;
+  padding: 48px 2%;
+  // margin:  0;
 }
 
 .l_footer {
@@ -101,13 +102,18 @@
 .l_pc-nav {
   display: none;
   position: fixed;
-  bottom: 40px;
-  right: 65%;
-  z-index: 100;
+  width: 50%;
+  height: 100vh;
+  left: 0;
+  margin-right: auto;
+  // background: rgba($color: red, $alpha: .8);
+  overflow: hidden;
+  // z-index: 1000;
+  z-index: 0;
 }
 
 .l_he-section {
-  margin: 40px auto;
+  margin: 64px auto;
 }
 
 .l_he-form {
@@ -116,7 +122,7 @@
 }
 
 .l_re-section {
-  margin: 40px auto;
+  margin: 64px auto;
   padding: 0 4%;
 }
 
