@@ -363,7 +363,7 @@
     bottom: 10%;
     left: 10%;
     right: 10%;
-    background: lighten($color: $main_color, $amount: 30);
+    background: lighten($color: $main_color, $amount: 35);
     z-index: -50;
   }
 }
@@ -1009,7 +1009,7 @@
     text-align: center;
     border: 2px solid;
     font-size: 1.25rem;
-    background: lighten($main_color, 35);
+    background: lighten($main_color, $amount: 35);
     color: $main_color;
 
     &:hover {
@@ -1074,14 +1074,9 @@
   }
 }
 
-.p_re-subtitle {
-  @include c_index;
-  font-size: 1.15rem;
-}
-
 .silhouettesam {
   text-align: center;
-  background: lighten($color: $main_color, $amount: 20);
+  background: lighten($color: $main_color, $amount: 35);
   height: 200px;
   width: 94%;
   margin: 16px auto;
@@ -1092,7 +1087,7 @@
   width: 74%;
   margin: 16px auto;
   padding: 16px;
-  border: 1px solid $main_color;
+  border: 3px solid $main_color;
   text-align: center;
   font-size: .8rem;
   
@@ -1109,15 +1104,64 @@
       color: $main_color;
     }
 
-    span {
+    a {
       margin-left: 4px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
 
 .p_re-sil {
 
+  &__subtitle {
+    @include c_index;
+    font-size: 1.15rem;
+  }
+
   &__item {
     margin: 32px auto;
+  }
+
+  &__title {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-left: 8px solid $main_color;
+  }
+}
+
+.p_re-skl {
+
+  &__title {
+    @include c_index;
+    font-size: 1.35rem;
+  }
+
+  &__point {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  &__box {
+    padding: 16px;
+    background: lighten($color: $main_color, $amount: 35);
+    font-size: .8rem;
+
+    li {
+      margin-left: 1em;
+
+      & + li {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__text {
+    margin: 16px 0;
   }
 }

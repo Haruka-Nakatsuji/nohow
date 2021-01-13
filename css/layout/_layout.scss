@@ -107,7 +107,7 @@
 }
 
 .l_he-section {
-  margin: 32px auto;
+  margin: 40px auto;
 }
 
 .l_he-form {
@@ -116,7 +116,7 @@
 }
 
 .l_re-section {
-  margin: 32px auto;
+  margin: 40px auto;
   padding: 0 4%;
 }
 
@@ -127,5 +127,9 @@
 .l_re-sil {
   li {
     list-style: none;
+  }
+
+  p {
+    margin-top: 16px;
   }
 }
