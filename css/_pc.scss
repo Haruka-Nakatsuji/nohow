@@ -3,6 +3,8 @@
 @import "./object/component";
 
 @media screen and (min-width: 1024px) {
+
+
   .l_pc-nav {
     display: block;
   }
@@ -11,10 +13,10 @@
     display: none;
   }
 
-  .l_hero {
-    width: 50%;
-    margin-left: auto;
-  }
+  // .l_hero {
+  //   width: 50%;
+  //   margin-left: auto;
+  // }
 
   .p_hero {
     &__catch {
@@ -48,7 +50,7 @@
     }
   }
 
-  .l_main {
+  .l_top-wrap {
     background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
     background-size: 50% auto;
   }
@@ -57,17 +59,16 @@
     background: none;
   }
 
-  .l_top-section {
+  .l_main {
     width: 50%;
     margin-left: auto;
-
-    &:last-child {
-      padding-bottom: 64px;
-    }
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
   }
 
   .l_footer {
     margin-top: 0;
+    width: 50%;
+    margin-left: auto;
   }
 
   .c_top-text {

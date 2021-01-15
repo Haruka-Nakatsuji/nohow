@@ -36,3 +36,18 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', () => {
 	document.querySelector('.l_hero').style.height = vh + 'px';
 });
+
+// const body = document.querySelector('body');
+// const footer = document.querySelector('.l_footer');
+// let closesize = body.scrollHeight - innerHeight - footer.scrollHeight;
+
+// console.log(closesize);
+
+// window.addEventListener('scroll', () => {
+// 	if(scrollY >= closesize) {
+// 		document.querySelector('.p_pc-nav__contents').classList.add('remove');
+// 	}
+// 	else {
+// 		document.querySelector('.p_pc-nav__contents').classList.remove('remove')
+// 	}
+// });

@@ -1034,11 +1034,18 @@ img {
 .p_pc-nav__contents {
   position: absolute;
   bottom: 10%;
-  left: calc(100% - (2rem + 32px + 32px));
+  left: calc(100% - (2rem + 24px * 2));
   font-size: 2rem;
   font-weight: bold;
   color: #454555;
   z-index: 100;
+}
+
+.p_pc-nav__contents.remove {
+  -webkit-transition: .15s;
+  transition: .15s;
+  -webkit-transform: translateX(calc(2rem + 24px * 2 + 8px));
+          transform: translateX(calc(2rem + 24px * 2 + 8px));
 }
 
 .p_pc-nav__item {
@@ -1064,10 +1071,10 @@ img {
 }
 
 .p_pc-nav__item:hover {
-  -webkit-transition: .5s;
-  transition: .5s;
-  -webkit-transform: translateX(calc(-100% + (2rem + 32px + 32px)));
-          transform: translateX(calc(-100% + (2rem + 32px + 32px)));
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-transform: translateX(calc(-100% + (2rem + 24px * 2) + 2px));
+          transform: translateX(calc(-100% + (2rem + 24px * 2) + 2px));
 }
 
 .p_pc-nav__item a {
@@ -1078,9 +1085,9 @@ img {
 }
 
 .p_pc-nav__item i {
-  padding: 16px 32px;
+  padding: 16px 24px;
   text-align: center;
-  max-width: calc(2rem + 32px + 32px);
+  color: #4169e1;
 }
 
 .p_scroll {
@@ -2064,6 +2071,7 @@ img {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 16px;
 }
 
 .p_re-topsentence {
@@ -2359,10 +2367,6 @@ img {
   .p_nav {
     display: none;
   }
-  .l_hero {
-    width: 50%;
-    margin-left: auto;
-  }
   .p_hero__catch {
     right: 50%;
     bottom: none;
@@ -2385,22 +2389,23 @@ img {
   .p_nav__contents {
     bottom: 120px;
   }
-  .l_main {
+  .l_top-wrap {
     background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
     background-size: 50% auto;
   }
   .l_hero {
     background: none;
   }
-  .l_top-section {
+  .l_main {
     width: 50%;
     margin-left: auto;
-  }
-  .l_top-section:last-child {
-    padding-bottom: 64px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   }
   .l_footer {
     margin-top: 0;
+    width: 50%;
+    margin-left: auto;
   }
   .c_top-text {
     font-size: 1.2rem;

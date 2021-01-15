@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
     <title>NO-HOW</title>
     <link
       rel="stylesheet"
@@ -13,16 +14,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="l_header" style="position: fixed">
-      <a href="index.html"><img src="src/images/logo_bgwhite.png" alt="NO-HOW" /></a>
-    </header>
+    
     <nav class="l_nav">
       <ul class="p_nav__contents">
         <li class="p_nav__item"><a href="index.html">TOP</a></li>
         <br/>
         <li class="p_nav__item"><a href="checker/index.html">診断</a></li>
         <br/>
-        <li class="p_nav__item"><a href="#">タイプ別ファッション</a></li>
+        <li class="p_nav__item"><a href="index.html#topfashion">タイプ別ファッション</a></li>
         <br/>
         <li class="p_nav__item"><a href="reading/index.html">よみもの</a></li>
         <br/>
@@ -38,11 +37,16 @@
       <ul class="p_pc-nav__contents">
         <li class="p_pc-nav__item"><i class="fas fa-home"></i><a href="index.html">TOP</a></li>
         <li class="p_pc-nav__item"><i class="far fa-check-circle"></i><a href="checker/index.html">診断</a></li>
-        <li class="p_pc-nav__item"><i class="fas fa-tshirt"></i><a href="#" style="font-size: 1.5rem;">タイプ別ファッション</a></li>
+        <li class="p_pc-nav__item"><i class="fas fa-tshirt"></i><a href="index.html#topfashion" style="font-size: 1.5rem;">タイプ別ファッション</a></li>
         <li class="p_pc-nav__item"><i class="fas fa-book"></i><a href="reading/index.html">よみもの</a></li>
         <li class="p_pc-nav__item"><i class="far fa-question-circle"></i><a href="help/index.html">お悩み解決</a></li>
       </ul>
     </nav>
+
+    <div class="l_top-wrap">
+    <header class="l_header" style="position: fixed">
+      <a href="index.html"><img src="src/images/logo_bgwhite.png" alt="NO-HOW" /></a>
+    </header>
     <div class="p_scroll">
       <p>scroll</p>
       <div class="p_scroll__line"></div>
@@ -52,7 +56,7 @@
         <h2 class="p_hero__catch">もう、選ばせない。</h2>
         <a class="p_hero__gocheck" href="checker/index.html">診断へGO</a>
       </article>
-      <section class="l_top-section">
+      <section class="l_top-section" id="topfashion">
         <!-- <ul class="p_fashion__list">
 		<li><a class="p_fashion__item" href="#">Aタイプ</a></li>
 			<li><a class="p_fashion__item" href="#">Bタイプ</a></li>
@@ -112,17 +116,18 @@
     </main>
     <footer class="l_footer p_footer">
       <h2 class="p_footer__title">ご購入はこちらから</h2>
-      <a href="https://zozo.jp/"
+      <a href="https://zozo.jp/" target="_blank"
         ><img
           class="p_footer__zozo"
           src="./src/images/zooz_logo.jpeg"
           alt="zozo"
+          
       /></a>
       <h3 class="p_footer__title">あなたのタイプは?</h3>
       <div class="p_footer__link">
-        <a href="#">Sタイプ</a>
-        <a href="#">Wタイプ</a>
-        <a href="#">Nタイプ</a>
+        <a href="./checker/typeS.html">Sタイプ</a>
+        <a href="./checker/typeW.html">Wタイプ</a>
+        <a href="./checker/typeN.html">Nタイプ</a>
       </div>
       <div class="p_footer__link--other">
         <a href="reading/index.html">よみもの</a>
@@ -138,6 +143,7 @@
         <small>Copyright&copy; 2021 NO-HOW</small>
       </div>
     </footer>
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>

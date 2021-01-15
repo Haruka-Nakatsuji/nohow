@@ -175,11 +175,16 @@
   &__contents {
     position: absolute;
     bottom: 10%;
-    left: calc(100% - (2rem + 32px + 32px));
+    left: calc(100% - (2rem + 24px * 2));
     font-size: 2rem;
     font-weight: bold;
     color: $text_color;
     z-index: 100;
+    
+    &.remove {
+      transition: .15s;
+      transform: translateX(calc(2rem + 24px * 2 + 8px));
+    }
   }
 
   &__item {
@@ -199,8 +204,8 @@
     }
 
     &:hover {
-      transition: .5s;
-      transform: translateX(calc(-100% + (2rem + 32px + 32px)));
+      transition: .25s;
+      transform: translateX(calc(-100% + (2rem + 24px * 2) + 2px));
     }
 
     a {
@@ -211,9 +216,10 @@
     }
 
     i {
-      padding: 16px 32px;
+      padding: 16px 24px;
       text-align: center;
-      max-width: calc(2rem + 32px + 32px);
+      // max-width: calc(2rem + 32px + 32px);
+      color: $main_color;
     }
   }
 }
@@ -1101,6 +1107,7 @@
 
 .p_re-title {
   @include titles;
+  margin-top: 16px;
 }
 
 .p_re-topsentence {
