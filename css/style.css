@@ -629,7 +629,7 @@ img {
 .l_hero {
   position: relative;
   height: 100vh;
-  background: url("../src/images/hero_img.jpeg") center;
+  background: url("../src/images/top_bg_2.jpg") center;
   background-size: cover;
 }
 
@@ -730,6 +730,11 @@ img {
   margin: 64px auto;
 }
 
+.l_he-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 64px;
+}
+
 .l_he-form {
   width: 70%;
   margin: 32px auto;
@@ -738,6 +743,11 @@ img {
 .l_re-section {
   margin: 64px auto;
   padding: 0 4%;
+}
+
+.l_re-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 64px;
 }
 
 .l_re-section p span {
@@ -850,8 +860,8 @@ img {
 
 .p_hero__catch {
   position: absolute;
-  bottom: 34vh;
-  right: 3%;
+  top: 25vh;
+  left: 4%;
   font-size: 1.25rem;
   font-family: serif;
   color: #000;
@@ -967,8 +977,8 @@ img {
   background: #4169e1;
   border-radius: 16px;
   color: #fff;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .p_nav__item a {
@@ -1830,7 +1840,7 @@ img {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .p_he-serif {
@@ -2035,14 +2045,14 @@ img {
   height: 120px;
   padding: 16px;
   margin-top: 8px;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4) inset;
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
   border-radius: 8px;
 }
 
 .p_he-form__textarea:focus {
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4) inset;
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) inset;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) inset;
 }
 
 .p_he-form__submit {
@@ -2071,7 +2081,7 @@ img {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .p_re-topsentence {
@@ -2390,7 +2400,7 @@ img {
     bottom: 120px;
   }
   .l_top-wrap {
-    background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
+    background: url("../src/images/top_bg_2.jpg") no-repeat left center fixed;
     background-size: 50% auto;
   }
   .l_hero {
@@ -2406,6 +2416,8 @@ img {
     margin-top: 0;
     width: 50%;
     margin-left: auto;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   }
   .c_top-text {
     font-size: 1.2rem;
@@ -2433,6 +2445,15 @@ img {
   .p_result__lg-list {
     width: 80%;
     margin: 0 auto;
+  }
+  .l_header {
+    position: fixed;
+  }
+  .p_re-title {
+    padding-top: 64px;
+  }
+  .p_he-title {
+    padding-top: 64px;
   }
 }
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/images/favicon.ico" type="image/x-icon">
     <title>NO-HOW｜よみもの</title>
     <link
       rel="stylesheet"
@@ -13,18 +14,13 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header class="l_header">
-      <a href="../index.html"
-        ><img src="../src/images/logo.png" alt="NO-HOW"
-      /></a>
-    </header>
     <nav class="l_nav">
       <ul class="p_nav__contents">
         <li class="p_nav__item"><a href="../index.html">TOP</a></li>
         <br />
         <li class="p_nav__item"><a href="../checker/index.html">診断</a></li>
         <br />
-        <li class="p_nav__item"><a href="#">タイプ別ファッション</a></li>
+        <li class="p_nav__item"><a href="../index.html#topfashion">タイプ別ファッション</a></li>
         <br />
         <li class="p_nav__item"><a href="./index.html">よみもの</a></li>
         <br />
@@ -38,16 +34,21 @@
     </nav>
     <nav class="l_pc-nav">
       <ul class="p_pc-nav__contents">
-        <li class="p_pc-nav__item"><a href="../index.html">TOP</a></li>
-        <li class="p_pc-nav__item"><a href="../checker/index.html">診断</a></li>
-        <li class="p_pc-nav__item"><a href="#">タイプ別ファッション</a></li>
-        <li class="p_pc-nav__item"><a href="./index.html">よみもの</a></li>
-        <li class="p_pc-nav__item">
-          <a href="../help/index.html">お悩み解決</a>
-        </li>
+        <li class="p_pc-nav__item"><i class="fas fa-home"></i><a href="../index.html">TOPへ戻る</a></li>
+        <li class="p_pc-nav__item"><i class="far fa-check-circle"></i><a href="../checker/index.html">診断をする</a></li>
+        <li class="p_pc-nav__item"><i class="fas fa-tshirt"></i><a href="../index.html#topfashion" style="font-size: 1.5rem;">タイプ別ファッション</a></li>
+        <li class="p_pc-nav__item"><i class="fas fa-book"></i><a href="./index.html">よみものを読む</a></li>
+        <li class="p_pc-nav__item"><i class="far fa-question-circle"></i><a href="../help/index.html">お悩み解決を見る</a></li>
       </ul>
     </nav>
-    <main class="main">
+
+    <div class="l_re-wrap">
+    <header class="l_header">
+      <a href="../index.html"
+        ><img src="../src/images/logo_bgwhite.png" alt="NO-HOW"
+      /></a>
+    </header>
+    <main class="l_main">
       <h1 class="p_re-title">よみもの</h1>
       <section class="l_re-section">
         <p class="p_re-topsentence">
@@ -172,6 +173,7 @@
         <p></p>
       </section>
     </main>
+  </div>
     <script src="../js/index.js"></script>
   </body>
 </html>

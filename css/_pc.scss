@@ -51,7 +51,7 @@
   }
 
   .l_top-wrap {
-    background: url("../src/images/hero_img.jpeg") no-repeat left center fixed;
+    background: url("../src/images/top_bg_2.jpg") no-repeat left center fixed;
     background-size: 50% auto;
   }
 
@@ -69,6 +69,7 @@
     margin-top: 0;
     width: 50%;
     margin-left: auto;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
   }
 
   .c_top-text {
@@ -102,6 +103,19 @@
       margin: 0 auto;
     }
   }
+
+  .l_header {
+    position: fixed;
+  }
+
+  .p_re-title {
+    padding-top: 64px;
+  }
+
+  .p_he-title {
+    padding-top: 64px;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {

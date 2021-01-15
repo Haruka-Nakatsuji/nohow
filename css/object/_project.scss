@@ -5,8 +5,9 @@
 .p_hero {
   &__catch {
     position: absolute;
-    bottom: 34vh;
-    right: 3%;
+    // bottom: 34vh;
+    top: 25vh;
+    left: 4%;
     // padding: 4px 8px;
     // background: #fff;
     font-size: 1.25rem;
@@ -115,7 +116,7 @@
     background: $main_color;
     border-radius: 16px;
     color: #fff;
-    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
 
     a {
       display: block;
@@ -905,7 +906,7 @@
 
 .p_he-title {
   @include titles;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .p_he-serif {
@@ -1089,11 +1090,11 @@
     height: 120px;
     padding: 16px;
     margin-top: 8px;
-    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.4) inset;
+    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.3) inset;
     border-radius: 8px;
 
     &:focus {
-      box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.4) inset;
+      box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3) inset;
     }
   }
 
@@ -1107,7 +1108,7 @@
 
 .p_re-title {
   @include titles;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 
 .p_re-topsentence {

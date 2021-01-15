@@ -21,7 +21,7 @@
 .l_hero {
   position: relative;
   height: 100vh;
-  background: url("../src/images/hero_img.jpeg") center;
+  background: url("../src/images/top_bg_2.jpg") center;
   background-size: cover;
 }
 
@@ -115,6 +115,11 @@
 
 .l_he-section {
   margin: 64px auto;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 64px;
+  }
 }
 
 .l_he-form {
@@ -125,6 +130,11 @@
 .l_re-section {
   margin: 64px auto;
   padding: 0 4%;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 64px;
+  }
 }
 
 .l_re-section p span {
