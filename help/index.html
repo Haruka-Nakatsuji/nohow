@@ -63,7 +63,7 @@
         </p>
       </section>
       <section class="l_he-section">
-        <p class="p_he-serif__2">タップで回答を表示！</p>
+        <p class="p_he-serif__2"><span class="tap_or_click">クリック</span>で回答を表示！</p>
         <ul class="p_he-cards">
           <li class="p_he-card">
             <div class="p_he-card__title">
@@ -75,9 +75,14 @@
                 <p>おっしゃる通りです。<br />お値段張りますよね。</p>
               </div>
               <p>
-                ご予算の都合もあると思いますが、<span>1,500円未満</span>でも素敵なデザインの服がたくさんございますよ！<br />
-                UNIQLO、GUも捨てがたいショップです。無地の服が多く、お求め安い価格なのでファッション初心者にもおすすめです！
+                ご予算の都合もあると思いますが、<span>1500円未満</span>でも無地の服のようなどんな服にも合わせやすい物がたくさんございます。<br>
+                <span>お気に入りブランド</span>のセール時などを狙い目にしてお安く服をお求めください！<br>
+                ZOZOTOWNの<span>無料会員</span>になると、お気に入りブランドの登録もできますので、<span>セールのお知らせを見逃すことなく</span>お買い上げ頂けます。<br>
+                もしご登録されていないようでしたらこの機会に無料会員登録をしてみませんか？<img src="../src/images/logo.png" alt="NO-HOW">とアカウント連携もして頂ければ、 さらに便利に本サービスをご利用頂けるのはもちろん、お得な情報もご確認頂けます。<br>
+                合わせてご確認ください!
               </p>
+              <a class="p_he-card__zozo" href="https://zozo.jp/_member/regist/" target="_blank">ZOZOTOWNに登録する</a>
+              <a class="p_he-card__zozo--l" href="">ZOZOアカウントと連携する</a>
             </div>
           </li>
           <li class="p_he-card">
@@ -252,6 +257,10 @@
           //一旦親にいかして、最後の子要素を取得している
         });
       });
+
+      if(navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+	document.querySelector('.tap_or_click').textContent = 'タップ';
+  }
     </script>
   </body>
 </html>

@@ -654,25 +654,27 @@
   &__title {
     @include titles;
     margin: 16px 0;
+    margin-top: 0;
   }
 
   &__bone-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    height: 30vh;
-    margin: 16px auto;
-    background: lighten($main_color, 35);
-    max-width: 800px;
-
-    h1 {
-      width: 110%;
-    }
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 
     p {
+      position: absolute;
+      left: 50%;
+      top:  10%;
+      transform: translateX(-50%);
+      color: #fff;
+      text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.8);
       font-size: 1.25rem;
+      white-space: nowrap;
     }
   }
 
@@ -703,6 +705,11 @@
 
   &__section {
     margin: 72px auto;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 72px;
+    }
   }
 
   &__chara-list {
@@ -719,7 +726,7 @@
     }
 
     span {
-      color: $accent-color;
+      background: linear-gradient(transparent 70%,lighten($accent_color, 15) 70%);
     }
   }
 
@@ -1043,7 +1050,16 @@
   }
 
   p span {
-    color: $accent-color;
+    // color: $accent-color; //ここ！！！！！！！！！！！！！！！！！！！！！！！！！！！
+    background: linear-gradient(transparent 70%,lighten($accent_color, 15) 70%);
+  }
+
+  p img {
+    display: inline;
+    width: auto;
+    height: 1.25em;
+    vertical-align: middle;
+    padding-right: 4px;
   }
 
   &__link {
@@ -1058,6 +1074,26 @@
 
     &:hover {
       opacity: 0.6;
+    }
+  }
+
+  &__zozo {
+    display: block;
+    padding: 16px 8px;
+    margin-top: 16px;
+    text-align: center;
+    background: #000000;
+    color: #fff;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &--l {
+      @extend .p_he-card__zozo;
+      background-color: #fff;
+      color: $text_color;
+      border: 1px solid currentColor;
     }
   }
 }

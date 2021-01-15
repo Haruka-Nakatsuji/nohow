@@ -20,11 +20,10 @@
 
   .p_hero {
     &__catch {
-      right: 50%;
-      bottom: none;
+      left: 50%;
       top: 38vh;
       font-size: 1.75rem;
-      transform: translateX(50%);
+      transform: translateX(-50%);
     }
 
     &__gocheck {
@@ -51,7 +50,7 @@
   }
 
   .l_top-wrap {
-    background: url("../src/images/top_bg_2.jpg") no-repeat left center fixed;
+    background: url("../src/images/top_bg.jpg") no-repeat left top fixed;
     background-size: 50% auto;
   }
 
@@ -113,6 +112,10 @@
   }
 
   .p_he-title {
+    padding-top: 64px;
+  }
+
+  .p_result__title {
     padding-top: 64px;
   }
 

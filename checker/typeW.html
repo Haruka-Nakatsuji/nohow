@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../src/images/favicon.ico" type="image/x-icon">
     <title>NO-HOW｜ウェーブタイプ</title>
     <link
       rel="stylesheet"
@@ -13,12 +14,41 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <nav class="l_nav">
+      <ul class="p_nav__contents">
+        <li class="p_nav__item"><a href="../index.html">TOP</a></li>
+        <br />
+        <li class="p_nav__item"><a href="../checker/index.html">診断</a></li>
+        <br />
+        <li class="p_nav__item"><a href="../index.html#topfashion">タイプ別ファッション</a></li>
+        <br />
+        <li class="p_nav__item"><a href="./index.html">よみもの</a></li>
+        <br />
+        <li class="p_nav__item"><a href="../help/index.html">お悩み解決</a></li>
+      </ul>
+      <div class="p_nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <nav class="l_pc-nav">
+      <ul class="p_pc-nav__contents">
+        <li class="p_pc-nav__item"><i class="fas fa-home"></i><a href="../index.html">TOPへ戻る</a></li>
+        <li class="p_pc-nav__item"><i class="far fa-check-circle"></i><a href="../checker/index.html">診断をする</a></li>
+        <li class="p_pc-nav__item"><i class="fas fa-tshirt"></i><a href="../index.html#topfashion" style="font-size: 1.5rem;">タイプ別ファッション</a></li>
+        <li class="p_pc-nav__item"><i class="fas fa-book"></i><a href="./index.html">よみものを読む</a></li>
+        <li class="p_pc-nav__item"><i class="far fa-question-circle"></i><a href="../help/index.html">お悩み解決を見る</a></li>
+      </ul>
+    </nav>
+
+    <div class="l_re-wrap">
     <header class="l_header">
       <a href="../index.html"
         ><img src="../src/images/logo.png" alt="NO-HOW"
       /></a>
     </header>
-    <main class="main">
+    <main class="l_main">
       <p class="p_result__title">診断結果</p>
       <div class="p_result__bone-type">
         <p>あなたの骨格タイプは</p>
@@ -236,5 +266,6 @@
         </ul>
       </section>
     </main>
+    </div>
   </body>
 </html>
