@@ -15,6 +15,39 @@ $text_color: #454555;
   }
 }
 
+@keyframes catchView {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes catchTrans {
+  0% {
+    color: transparent;
+  }
+  25% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  51% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
 @keyframes jumpGocheck {
   100% {
     transform: translateX(-50%) scale(1.1, 1.1);

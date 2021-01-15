@@ -12,7 +12,22 @@
     // background: #fff;
     font-size: 1.25rem;
     font-family: serif;
-    color: #000;
+    // color: #000;
+    color: transparent;
+    overflow: hidden;
+    animation: catchTrans 1.5s forwards;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      animation: catchView 1.5s forwards;
+    }
   }
 
   &__gocheck {
@@ -114,13 +129,14 @@
     opacity: 0;
     margin: 8px 0;
     background: $main_color;
-    border-radius: 16px;
+    border-radius: 20px;
     color: #fff;
     box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
+    font-size: 1.35rem;
 
     a {
       display: block;
-      padding: 16px;
+      padding: 16px 24px;
     }
 
     &:hover {
@@ -138,6 +154,8 @@
 
     &:nth-child(5) {
       transform: translateY(188px);
+      font-size: 1.25rem;
+      white-space: nowrap;
     }
 
     &:nth-child(7) {
@@ -285,21 +303,59 @@
 
 .p_fashion {
   &__list {
+    width: 80%;
+    margin: auto;
     margin-top: 64px;
   }
 
   &__item {
-    display: block;
-    position: relative;
-    //    margin: 0 8px 32px;
-    margin: 16px auto;
-    width: 80%;
-    height: 120px;
-    //    max-width: 180px;
-    overflow: hidden;
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    // transform: skewY(-5deg);
-  }
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 88px;
+      background: #eee;
+      padding: 0 32px;
+      background-blend-mode: multiply;
+      transition: .1s;
+      box-shadow: 0 8px 10px -6px rgba($color: #000000, $alpha: .6);
+
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+
+      div {
+        width: 100%;
+        text-align: center;
+        
+      }
+
+      img {
+        max-width: 320px;
+      }
+
+      i {
+        margin-left: 24px;
+        font-size: 2rem;
+        color: #fff;
+      }
+
+      &--s {
+        @extend .p_fashion__item;
+        background: url("../src/images/top_bg.jpg") no-repeat center / cover rgba(darken($main_color, 35), .5);
+      }
+      &--w {
+        @extend .p_fashion__item;
+        background: url("../src/images/sozai_01.jpg") no-repeat center / cover rgba(darken($main_color, 35), .6);
+      }
+      &--n {
+        @extend .p_fashion__item;
+        background: url("../src/images/top_bg_2.jpg") no-repeat center / cover rgba(darken($main_color, 35), .6);
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+    }
 
   &__img {
     display: block;
@@ -318,9 +374,10 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%) rotate(3deg);
+    transform: translate(-50%, -50%);
     // text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
     z-index: 10;
+    // mix-blend-mode: exclusion;
   }
 
   // &__back {
@@ -354,11 +411,14 @@
     align-items: center;
     justify-content: space-around;
     margin: 32px;
+    z-index: 10;
 
+    
     img {
       width: 25%;
       max-width: 120px;
       min-width: 50px;
+      z-index: 1;
 
       &:last-child {
         max-width: 200px;
@@ -378,6 +438,7 @@
     box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.1);
     text-align: center;
     white-space: nowrap;
+    z-index: 1;
 
     &::before {
       content: "";
@@ -408,7 +469,7 @@
     left: 10%;
     right: 10%;
     background: lighten($color: $main_color, $amount: 35);
-    z-index: -50;
+    z-index: 0;
   }
 }
 
@@ -419,6 +480,10 @@
 .p_footer {
   &__zozo {
     width: 280px;
+
+    &:hover {
+      opacity: .8;
+    }
   }
 
   &__title {
@@ -547,6 +612,22 @@
     // border-radius: 8px;
   }
 
+  &__gotop {
+    @include main-button;
+    font-size: 1rem;
+    margin-top: 48px;
+    background: #fff;
+    border: 1px solid $main_color;
+    color: $main_color;
+    cursor: pointer;
+
+    i {
+      margin-right: 8px;
+      font-size: 1.25rem;
+      vertical-align: middle;
+    }
+  }
+
   &__btn {
     li {
       @include main-button;
@@ -672,7 +753,7 @@
       top:  10%;
       transform: translateX(-50%);
       color: #fff;
-      text-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.8);
+      text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
       font-size: 1.25rem;
       white-space: nowrap;
     }
@@ -710,10 +791,16 @@
       margin-bottom: 0;
       padding-bottom: 72px;
     }
+
+    &--li {
+      @extend .p_result__section;
+      position: relative;
+    }
   }
 
   &__chara-list {
-    width: 80%;
+    width: 96%;
+    padding-left: 1em;
     margin: 40px auto 32px;
     list-style: disc outside;
 
@@ -731,24 +818,26 @@
   }
 
   &__coordinate {
+    padding: 0 4%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 56px auto;
+    margin: 64px auto 32px;
   }
 
   &__model-img {
-    width: 50%;
-    height: 320px;
+    width: 30%;
+    height: 380px;
     object-position: center;
     object-fit: cover;
   }
 
   &__item {
-    width: 80%;
-    margin-top: 24px;
+    width: 50%;
+    // margin-top: 24px;
     text-align: center;
+    margin-left: 16px;
+    flex: 1;
   }
 
   &__item-serif {
@@ -777,7 +866,6 @@
   }
 
   &__item-list {
-    width: 100%;
 
     li {
       width: 100%;
@@ -792,14 +880,15 @@
 
     li a {
       display: flex;
-      padding: 8px;
+      padding: 8px 16px;
       border: #ccc 1px solid;
       border-radius: 16px;
       align-items: center;
       justify-content: center;
 
       span:first-child {
-        display: inline-block;
+        // display: inline-block;
+        display: none;
         width: 2rem;
         height: 2rem;
         border: $text_color solid 1px;
@@ -816,8 +905,7 @@
   }
 
   &__item-name {
-    width: calc(100% - (6rem + 2rem + 24px));
-    margin: 0 12px;
+    margin: 0 8px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -908,6 +996,115 @@
   &__lg-wrap {
     flex: 1;
     padding-left: 16px;
+  }
+
+  &__buy {
+    @include main-button;
+  }
+
+  &__sam {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 32px 16px;
+    background: #fff;
+    border: 2px solid #ccc;
+    text-align: center;
+    z-index: 3;
+
+    img {
+      display: inline-block;
+      height: 1.25em;
+      width: auto;
+      vertical-align: middle;
+    }
+  }
+
+  &__samt {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+
+  &__samstr {
+    font-size: 1.5rem;
+    background: linear-gradient(transparent 70%, lighten($accent_color, 10) 70%);
+
+    small {
+      font-size: .8rem;
+    }
+  }
+
+  &__sambg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(#fff, .5) , #fff 100%);
+  }
+
+  &__samlt {
+    font-size: 1.45rem;
+
+    small {
+      font-size: .8rem;
+    }
+  }
+
+  &__saml {
+
+    & p.--str {
+      color: $main_color;
+    }
+
+    li {
+      margin: 32px auto;
+      list-style: none;
+    }
+  }
+
+  &__samln {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    color: $main_color;
+  }
+
+  &__sambtn-w {
+    @extend .p_he-card__zozo--l;
+    margin-bottom: 24px !important;
+  }
+
+  &__sambtn-b {
+    @extend .p_he-card__zozo;
+    margin-top: 0 !important;
+  }
+
+  &__tri {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    border-style: solid;
+    border-width: 16px 32px 0 32px;
+    border-color: #4169e1 transparent transparent transparent;
+
+    &--f {
+      @extend .p_result__tri;
+      margin-top: 24px;
+    }
+
+    &--l {
+      @extend .p_result__tri;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__gotop {
+    @include main-button;
+    background: #fff;
+    color: $main_color;
+    border: 1px solid $main_color;
   }
 }
 

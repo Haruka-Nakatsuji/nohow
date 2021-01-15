@@ -28,10 +28,10 @@
         <br />
         <li class="p_nav__item"><a href="./index.html">お悩み解決</a></li>
       </ul>
-      <div class="p_nav">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="p_nav change">
+        <span class="change"></span>
+        <span class="change"></span>
+        <span class="change"></span>
       </div>
     </nav>
     <nav class="l_pc-nav">
@@ -240,7 +240,6 @@
       </div>
     </footer>
     </div>
-    <script src="../js/index.js"></script>
     <script>
       //お悩み解決のトグル
 
@@ -259,8 +258,17 @@
       });
 
       if(navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-	document.querySelector('.tap_or_click').textContent = 'タップ';
-  }
+	      document.querySelector('.tap_or_click').textContent = 'タップ';
+      }
+
+    const ham = document.querySelector('.p_nav');
+
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      document.querySelectorAll('.p_nav__item').forEach(item => {
+        item.classList.toggle('open');
+      });
+    });
     </script>
   </body>
 </html>

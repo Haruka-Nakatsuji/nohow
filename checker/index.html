@@ -44,12 +44,17 @@
             あなたの骨格を診断し、必ず似合う服を厳選します！
           </strong>
           <a href="checker.html" class="p_checker__gocheck">診断へGO！</a>
+          <a class="p_checker__gotop"><i class="fas fa-caret-left"></i>前のページへ戻る</a>
         </div>
       </section>
     </main>
     <script>
-      document.querySelector(".l_checker__info").style.height =
-        innerHeight + "px";
+      // document.querySelector(".l_checker__info").style.height =
+      //   innerHeight + "px";
+
+      document.querySelector('.p_checker__gotop').addEventListener('click', () => {
+        window.history.go(-1);
+      });
     </script>
   </body>
 </html>
