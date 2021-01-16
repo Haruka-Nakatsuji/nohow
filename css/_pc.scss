@@ -20,10 +20,10 @@
 
   .p_hero {
     &__catch {
-      left: 50%;
+      right: 50%;
       top: 38vh;
       font-size: 1.75rem;
-      transform: translateX(-50%);
+      transform: translateX(50%);
     }
 
     &__gocheck {
@@ -38,6 +38,8 @@
 
   .p_scroll {
     left: 75%;
+    font-size: 1.5rem;
+    font-weight: lighter;
   }
 
   .p_nav {
@@ -49,7 +51,10 @@
     }
   }
 
-  .l_top-wrap {
+  .l_top-wrap,
+  .l_re-wrap,
+  .l_he-wrap,
+  .l_type-wrap {
     background: url("../src/images/top_bg_2.jpg") no-repeat left center fixed;
     background-size: 50% auto;
   }
@@ -140,14 +145,4 @@
     padding-top: 64px;
   }
 
-}
-
-@media screen and (min-width: 1200px) {
-  // .l_main {
-  //   background-size: 50% auto;
-  // }
-
-  .l_checker__info {
-    height: 100vh;
-  }
 }

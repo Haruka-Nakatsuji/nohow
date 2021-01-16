@@ -6,16 +6,17 @@
   &__catch {
     position: absolute;
     // bottom: 34vh;
-    top: 25vh;
-    left: 4%;
+    top: 20vh;
+    // left: 4%;
+    right: 8%;
     // padding: 4px 8px;
     // background: #fff;
     font-size: 1.25rem;
     font-family: serif;
-    // color: #000;
-    color: transparent;
+    color: #000;
+    // color: transparent;
     overflow: hidden;
-    animation: catchTrans 1.5s forwards;
+    // animation: catchTrans 1.5s forwards;
 
     &::before {
       content: '';
@@ -25,8 +26,8 @@
       left:0;
       right: 0;
       bottom: 0;
-      background: #000;
-      animation: catchView 1.5s forwards;
+      // background: #000000;
+      // animation: catchView 1.5s forwards;
     }
   }
 
@@ -43,7 +44,7 @@
     padding: 1rem 2rem;
     background: #fff;
     // border-radius: 8px; //勝手に角丸にしました。
-    box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
     transition: 0.2s;
     animation: jumpGocheck 0.8s infinite alternate;
 
@@ -250,6 +251,7 @@
   transform: translateX(-50%);
   z-index: 1;
   font-size: 0.8rem;
+  font-family: sans-serif;
 
   &__line {
     width: 1px;
@@ -395,9 +397,8 @@
     display: block;
     width: 240px;
     height: 240px; //一旦ここに置いておく
-    object-fit: contain;
+    object-fit: cover;
     margin: auto;
-    border: $main_color 2px solid;
   }
 }
 
@@ -1348,8 +1349,15 @@
   text-align: center;
 
   &--m {
+    text-align: center;
     margin-top: 32px;
   }
+}
+
+.p_re-topimg {
+  display: block;
+  margin: auto;
+  max-width: 640px;
 }
 
 .silhouettesam {
@@ -1401,6 +1409,13 @@
 
   &__item {
     margin: 32px auto;
+    max-width: 880px;
+
+    img {
+      display: block;
+      width: 50%;
+      margin: auto;
+    }
   }
 
   &__title {
@@ -1431,7 +1446,7 @@
     font-size: .8rem;
 
     li {
-      margin-left: 1em;
+      margin-left: 2em;
 
       & + li {
         margin-top: 1rem;
@@ -1481,7 +1496,8 @@
   }
 
   &__exp {
-    margin: 24px 0;
+    margin: 24px auto;
+    max-width: 640px;
   }
 
   &__btn {
