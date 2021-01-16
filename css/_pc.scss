@@ -152,6 +152,10 @@
   .p_result__saml {
     display: flex;
 
+    li {
+      width: calc(100% / 3);
+    }
+
     li:not(:first-child) {
       margin-left: 8px;
       padding-left: 8px;
