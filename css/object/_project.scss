@@ -13,10 +13,10 @@
     // background: #fff;
     font-size: 1.25rem;
     font-family: serif;
-    color: #000;
-    // color: transparent;
+    // color: #000;
+    color: transparent;
     overflow: hidden;
-    // animation: catchTrans 1.5s forwards;
+    animation: catchTrans 2.25s forwards;
 
     &::before {
       content: '';
@@ -26,8 +26,8 @@
       left:0;
       right: 0;
       bottom: 0;
-      // background: #000000;
-      // animation: catchView 1.5s forwards;
+      background: #000000;
+      animation: catchView 2.25s forwards;
     }
   }
 
@@ -873,6 +873,7 @@
       margin: 0 auto 16px;
       list-style: none;
       transition: 0.3s all;
+      max-width: 480px;
 
       &:hover {
         opacity: 0.6;
@@ -1005,9 +1006,9 @@
 
   &__sam {
     position: absolute;
-    top: 32px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     padding: 32px 16px;
     background: #fff;
@@ -1066,7 +1067,6 @@
   }
 
   &__samln {
-    margin-bottom: 16px;
     font-size: 2rem;
     color: $main_color;
   }

@@ -17,16 +17,16 @@ $text_color: #454555;
 
 @keyframes catchView {
   0% {
-    transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%);
+    transform: translateX(-101%);
   }
   50% {
+    transform: translateX(-101%);
+  }
+  75% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(101%);
   }
 }
 
@@ -34,13 +34,13 @@ $text_color: #454555;
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {

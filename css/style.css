@@ -506,7 +506,7 @@ body {
 }
 
 p {
-  line-height: 1.75rem;
+  line-height: 2;
 }
 
 li {
@@ -545,39 +545,39 @@ img {
 
 @-webkit-keyframes catchView {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   50% {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  75% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
 }
 
 @keyframes catchView {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   50% {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  75% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
 }
 
@@ -585,13 +585,13 @@ img {
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {
@@ -603,13 +603,13 @@ img {
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {
@@ -851,20 +851,20 @@ img {
 
 @keyframes catchView {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   50% {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  75% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
 }
 
@@ -872,13 +872,13 @@ img {
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {
@@ -936,20 +936,20 @@ img {
 
 @keyframes catchView {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   50% {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  75% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
 }
 
@@ -957,13 +957,13 @@ img {
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {
@@ -1014,8 +1014,10 @@ img {
   right: 8%;
   font-size: 1.25rem;
   font-family: serif;
-  color: #000;
+  color: transparent;
   overflow: hidden;
+  -webkit-animation: catchTrans 2.25s forwards;
+          animation: catchTrans 2.25s forwards;
 }
 
 .p_hero__catch::before {
@@ -1026,6 +1028,9 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+  background: #000000;
+  -webkit-animation: catchView 2.25s forwards;
+          animation: catchView 2.25s forwards;
 }
 
 .p_hero__gocheck {
@@ -1945,6 +1950,7 @@ img {
   list-style: none;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  max-width: 480px;
 }
 
 .p_result__item-list li:hover {
@@ -2103,10 +2109,10 @@ img {
 
 .p_result__sam {
   position: absolute;
-  top: 32px;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 90%;
   padding: 32px 16px;
   background: #fff;
@@ -2164,7 +2170,6 @@ img {
 }
 
 .p_result__samln {
-  margin-bottom: 16px;
   font-size: 2rem;
   color: #4169e1;
 }
@@ -2759,20 +2764,20 @@ img {
 
 @keyframes catchView {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   50% {
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  75% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
 }
 
@@ -2780,13 +2785,13 @@ img {
   0% {
     color: transparent;
   }
-  25% {
-    color: transparent;
-  }
   50% {
     color: transparent;
   }
-  51% {
+  75% {
+    color: transparent;
+  }
+  76% {
     color: #000;
   }
   100% {
@@ -2841,7 +2846,7 @@ img {
   .p_hero__catch {
     right: 50%;
     top: 38vh;
-    font-size: 1.75rem;
+    font-size: 2rem;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
@@ -2861,7 +2866,10 @@ img {
   .p_nav__contents {
     bottom: 120px;
   }
-  .l_top-wrap,
+  .l_top-wrap {
+    background: url("../src/images/top_bg.jpg") no-repeat left center fixed;
+    background-size: 50% auto;
+  }
   .l_re-wrap,
   .l_he-wrap,
   .l_type-wrap {
@@ -2915,6 +2923,16 @@ img {
   }
   .p_result__title {
     padding-top: 64px;
+  }
+  .p_result__saml {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .p_result__saml li:not(:first-child) {
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #ccc;
   }
 }
 /*# sourceMappingURL=style.css.map */
