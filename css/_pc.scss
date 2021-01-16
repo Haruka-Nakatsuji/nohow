@@ -4,6 +4,14 @@
 
 @media screen and (min-width: 1024px) {
 
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    // font-size: 1.142857142857143rem;
+    font-size: 100%;
+  }
 
   .l_pc-nav {
     display: block;

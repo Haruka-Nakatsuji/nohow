@@ -495,11 +495,12 @@ template {
 }
 
 html {
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Iroha Maru", "筑紫A丸ゴシック", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: #454555;
   letter-spacing: 0.05rem;
@@ -511,6 +512,7 @@ p {
 
 li {
   list-style: disc;
+  line-height: 2;
 }
 
 nav li {
@@ -2837,6 +2839,12 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-size: 100%;
+  }
   .l_pc-nav {
     display: block;
   }
