@@ -2,6 +2,7 @@
 
 @import "./object/component";
 
+
 @media screen and (min-width: 1024px) {
 
   html {
@@ -49,6 +50,13 @@
     left: 75%;
     font-size: 1.5rem;
     font-weight: lighter;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+
+    &__line {
+      height: 48px;
+      margin-top: 0px;
+    }
   }
 
   .p_nav {
@@ -170,5 +178,13 @@
       padding-left: 8px;
       border-left: 1px solid #ccc;
     }
+  }
+
+  .p_re-sil-list {
+    font-size: .8rem;
+  }
+
+  .p_re-skl__box {
+    font-size: .8rem;
   }
 }
