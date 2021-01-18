@@ -32,6 +32,10 @@
 .l_top-section {
   padding: 48px 2%;
   // margin:  0;
+
+  &:last-child {
+    padding-bottom: 96px;
+  }
 }
 
 .l_footer {

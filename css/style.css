@@ -714,6 +714,10 @@ img {
   padding: 48px 2%;
 }
 
+.l_top-section:last-child {
+  padding-bottom: 96px;
+}
+
 .l_footer {
   margin-top: 64px;
   padding: 32px;
