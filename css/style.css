@@ -809,12 +809,12 @@ img {
 }
 
 .l_he-section {
-  margin: 64px auto;
+  margin: 96px auto;
 }
 
 .l_he-section:last-child {
   margin-bottom: 0;
-  padding-bottom: 64px;
+  padding-bottom: 96px;
 }
 
 .l_he-form {
@@ -823,13 +823,13 @@ img {
 }
 
 .l_re-section {
-  margin: 64px auto;
+  margin: 96px auto;
   padding: 0 4%;
 }
 
 .l_re-section:last-child {
   margin-bottom: 0;
-  padding-bottom: 64px;
+  padding-bottom: 96px;
 }
 
 .l_re-section p span {
