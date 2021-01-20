@@ -38,11 +38,10 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 2.25rem;
-    // font-family: serif;
     white-space: nowrap;
-    color: #000;
+    color: #fff;
     padding: 1rem 2rem;
-    background: #fff;
+    background: $main_color;
     // border-radius: 8px; //勝手に角丸にしました。
     box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
     transition: 0.2s;
@@ -559,7 +558,7 @@
     img {
       width: auto;
       height: 1em;
-      padding-right: 8px;
+      padding-right: 4px;
       vertical-align: middle;
     }
 
@@ -593,7 +592,6 @@
     margin: 16px auto 0;
     font-size: 2rem;
     width: 90%;
-    // border-radius: 8px;
   }
 
   &__gotop {
