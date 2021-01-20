@@ -33,8 +33,23 @@
   padding: 48px 2%;
   // margin:  0;
 
+  &:first-child {
+    padding-top: 96px;
+  }
+
   &:last-child {
     padding-bottom: 96px;
+  }
+
+  &--f {
+    @extend .l_top-section;
+    text-align: center;
+
+    h2 img {
+      display: inline-block;
+      width: auto;
+      height: 1.25em;
+    }
   }
 }
 
@@ -115,7 +130,6 @@
   overflow: hidden;
   // z-index: 1000;
   z-index: 0;
-
 }
 
 .l_he-section {
@@ -143,7 +157,7 @@
 }
 
 .l_re-section p span {
-  background: linear-gradient(transparent 70%,lighten($accent_color, 15) 70%);
+  background: linear-gradient(transparent 70%, lighten($accent_color, 15) 70%);
 }
 
 .l_re-sil {

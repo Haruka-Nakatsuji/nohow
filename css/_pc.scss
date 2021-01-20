@@ -2,9 +2,7 @@
 
 @import "./object/component";
 
-
 @media screen and (min-width: 1024px) {
-
   html {
     font-size: 16px;
   }
@@ -51,7 +49,7 @@
     font-size: 1.5rem;
     font-weight: lighter;
     letter-spacing: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 
     &__line {
       height: 48px;
@@ -181,10 +179,16 @@
   }
 
   .p_re-sil-list {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .p_re-skl__box {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .l_top-wrap {
+    background-position: left top;
   }
 }

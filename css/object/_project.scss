@@ -19,11 +19,11 @@
     animation: catchTrans 2.25s forwards;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
-      top:0;
-      left:0;
+      top: 0;
+      left: 0;
       right: 0;
       bottom: 0;
       background: #000000;
@@ -73,17 +73,17 @@
 
     &:first-child {
       top: 25%;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &:nth-child(2) {
       top: 50%;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &:last-child {
       top: 75%;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &.change {
@@ -146,7 +146,6 @@
 
     &:first-child {
       transform: translateY(300px);
-      
     }
 
     &:nth-child(3) {
@@ -191,7 +190,6 @@
 }
 
 .p_pc-nav {
-
   &__contents {
     position: absolute;
     bottom: 10%;
@@ -200,9 +198,9 @@
     font-weight: bold;
     color: $text_color;
     z-index: 100;
-    
+
     &.remove {
-      transition: .15s;
+      transition: 0.15s;
       transform: translateX(calc(2rem + 24px * 2 + 8px));
     }
   }
@@ -228,7 +226,7 @@
     }
 
     &:hover {
-      transition: .25s;
+      transition: 0.25s;
       transform: translateX(calc(-100% + (2rem + 24px * 2) + 2px));
     }
 
@@ -272,7 +270,7 @@
   z-index: 1;
   font-size: 0.8rem;
   font-family: sans-serif;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 
   &__line {
     width: 1px;
@@ -280,7 +278,6 @@
     background: currentColor;
     margin: 8px auto 0;
   }
-
 }
 
 .p_index-subtitle {
@@ -295,53 +292,55 @@
   }
 
   &__item {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 88px;
-      background: #eee;
-      padding: 0 32px;
-      background-blend-mode: multiply;
-      transition: .1s;
-      box-shadow: 0 8px 10px -6px rgba($color: #000000, $alpha: .6);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 88px;
+    background: #eee;
+    padding: 0 32px;
+    background-blend-mode: multiply;
+    transition: 0.1s;
+    box-shadow: 0 8px 10px -6px rgba($color: #000000, $alpha: 0.6);
 
-      &:not(:first-child) {
-        margin-top: 24px;
-      }
-
-      div {
-        width: 100%;
-        text-align: center;
-        
-      }
-
-      img {
-        max-width: 320px;
-      }
-
-      i {
-        margin-left: 24px;
-        font-size: 2rem;
-        color: #fff;
-      }
-
-      &--s {
-        @extend .p_fashion__item;
-        background: url("../src/images/top_bg.jpg") no-repeat center / cover rgba(darken($main_color, 35), .5);
-      }
-      &--w {
-        @extend .p_fashion__item;
-        background: url("../src/images/sozai_01.jpg") no-repeat center / cover rgba(darken($main_color, 35), .6);
-      }
-      &--n {
-        @extend .p_fashion__item;
-        background: url("../src/images/top_bg_2.jpg") no-repeat center / cover rgba(darken($main_color, 35), .6);
-      }
-
-      &:hover {
-        opacity: .8;
-      }
+    &:not(:first-child) {
+      margin-top: 24px;
     }
+
+    div {
+      width: 100%;
+      text-align: center;
+    }
+
+    img {
+      max-width: 320px;
+    }
+
+    i {
+      margin-left: 24px;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    &--s {
+      @extend .p_fashion__item;
+      background: url("../src/images/top_bg.jpg") no-repeat center / cover
+        rgba(darken($main_color, 35), 0.5);
+    }
+    &--w {
+      @extend .p_fashion__item;
+      background: url("../src/images/sozai_01.jpg") no-repeat center / cover
+        rgba(darken($main_color, 35), 0.6);
+    }
+    &--n {
+      @extend .p_fashion__item;
+      background: url("../src/images/top_bg_2.jpg") no-repeat center / cover
+        rgba(darken($main_color, 35), 0.6);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 
   &__img {
     display: block;
@@ -399,7 +398,6 @@
     margin: 32px;
     z-index: 10;
 
-    
     img {
       width: 25%;
       max-width: 120px;
@@ -468,7 +466,7 @@
     width: 280px;
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 
@@ -736,7 +734,7 @@
     p {
       position: absolute;
       left: 50%;
-      top:  10%;
+      top: 10%;
       transform: translateX(-50%);
       color: #fff;
       text-shadow: 0 0 4px rgba($color: #000000, $alpha: 1);
@@ -799,7 +797,10 @@
     }
 
     span {
-      background: linear-gradient(transparent 70%,lighten($accent_color, 15) 70%);
+      background: linear-gradient(
+        transparent 70%,
+        lighten($accent_color, 15) 70%
+      );
     }
   }
 
@@ -852,7 +853,6 @@
   }
 
   &__item-list {
-
     li {
       width: 100%;
       margin: 0 auto 16px;
@@ -1017,10 +1017,13 @@
 
   &__samstr {
     font-size: 1.5rem;
-    background: linear-gradient(transparent 70%, lighten($accent_color, 10) 70%);
+    background: linear-gradient(
+      transparent 70%,
+      lighten($accent_color, 10) 70%
+    );
 
     small {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -1028,19 +1031,19 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(#fff, .5) , #fff 100%);
+    background: linear-gradient(rgba(#fff, 0.5), #fff 100%);
+    z-index: 2;
   }
 
   &__samlt {
     font-size: 1.45rem;
 
     small {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
   &__saml {
-
     & p.--str {
       color: $main_color;
     }
@@ -1234,7 +1237,10 @@
 
   p span {
     // color: $accent-color; //ここ！！！！！！！！！！！！！！！！！！！！！！！！！！！
-    background: linear-gradient(transparent 70%,lighten($accent_color, 15) 70%);
+    background: linear-gradient(
+      transparent 70%,
+      lighten($accent_color, 15) 70%
+    );
   }
 
   p img {
@@ -1269,7 +1275,7 @@
     color: #fff;
 
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &--l {
@@ -1354,14 +1360,13 @@
 }
 
 .p_re-sil-list {
-
   width: 74%;
   margin: 16px auto;
   padding: 16px;
   border: 3px solid $main_color;
   text-align: center;
   // font-size: .8rem;
-  
+
   li {
     list-style: decimal inside;
 
@@ -1386,7 +1391,6 @@
 }
 
 .p_re-sil {
-
   &__subtitle {
     @include c_index;
     font-size: 1.15rem;
@@ -1414,7 +1418,6 @@
 }
 
 .p_re-skl {
-
   &__title {
     @include c_index;
     font-size: 1.35rem;
@@ -1436,6 +1439,35 @@
       & + li {
         // margin-top: 1rem;
       }
+
+      &.--color {
+        span {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-bottom: 2px;
+          margin-left: 2px;
+
+          &:first-child {
+            background: #000000;
+          }
+
+          &:nth-child(2) {
+            background: #000080;
+          }
+
+          &:nth-child(3) {
+            background: #ffffff;
+          }
+
+          &:last-child {
+            background: #f0e68c;
+          }
+        }
+      }
     }
   }
 
@@ -1445,14 +1477,12 @@
 }
 
 .p_re-reco {
-
   &__title {
     @include c_index;
     font-size: 1.35rem;
   }
 
   &__list {
-
     li {
       margin: 40px 0;
       list-style: none;
@@ -1502,15 +1532,13 @@
   &__note {
     display: block;
     margin: 16px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: lighten($color: $text_color, $amount: 20);
     text-align: center;
-
   }
 }
 
 .p_re-taste {
-
   &__title {
     @include c_index;
     font-size: 1.35rem;
