@@ -1067,8 +1067,8 @@ img {
   color: #fff;
   padding: 1rem 2rem;
   background: #4169e1;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-animation: jumpGocheck 0.8s infinite alternate;
@@ -1076,8 +1076,8 @@ img {
 }
 
 .p_hero__gocheck:hover {
-  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .p_nav {
