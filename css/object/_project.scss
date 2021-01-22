@@ -31,12 +31,17 @@
     }
   }
 
-  &__gocheck {
-    display: block;
+  &__gowrap {
     position: absolute;
-    bottom: 15vh;
+    bottom: 18vh;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__gocheck {
+    display: inline-block;
     font-size: 2.25rem;
     white-space: nowrap;
     color: #fff;
@@ -49,6 +54,31 @@
 
     &:hover {
       box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+
+  &__gocheckhigh {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    text-shadow: 0 0 4px #fff;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 1.25em;
+      margin-right: 8px;
+      background: $text_color;
+      border-radius: 2px;
+      vertical-align: middle;
+      transform: rotate(-15deg);
+    }
+
+    &::after {
+      @extend .p_hero__gocheckhigh::before;
+      margin-right: 0px;
+      margin-left: 8px;
+      transform: rotate(15deg);
     }
   }
 }
@@ -637,7 +667,7 @@
     transition: 0.1s;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.6;
     }
 
     i {
@@ -1396,6 +1426,11 @@
   &__subtitle {
     @include c_index;
     font-size: 1.15rem;
+
+    &--2 {
+      @extend .p_re-sil__subtitle;
+      font-size: 2rem;
+    }
   }
 
   &__item {

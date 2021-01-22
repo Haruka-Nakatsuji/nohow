@@ -32,16 +32,28 @@
       top: 38vh;
       font-size: 2rem;
       transform: translateX(50%);
+      white-space: nowrap;
+    }
+
+    &__gowrap {
+      bottom: 35vh;
     }
 
     &__gocheck {
-      bottom: 38vh;
-      left: 50%;
+      // bottom: 35vh;
+      // left: 50%;
+      display: block;
       width: 70%;
+      margin: 0 auto;
       text-align: center;
       background: $main_color;
       color: #fff;
     }
+
+    // &__gocheckhigh {
+    //   bottom: 48vh;
+    //   // left: 50%;
+    // }
   }
 
   .p_scroll {
@@ -68,7 +80,7 @@
 
   .l_top-wrap {
     background: url("../src/images/top_bg.jpg") no-repeat left center fixed;
-    background-size: 50% auto;
+    background-size: 70% auto;
   }
 
   .l_re-wrap,
@@ -213,6 +225,8 @@
 
 @media screen and (min-width: 1200px) {
   .l_top-wrap {
-    background-position: left top;
+    background: url("../src/images/top_bg.jpg") no-repeat left top fixed;
+    background-size: 50% auto;
+    // background-position: left top;
   }
 }

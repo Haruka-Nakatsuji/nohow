@@ -33,10 +33,6 @@
   padding: 48px 2%;
   // margin:  0;
 
-  &:first-child {
-    padding-top: 96px;
-  }
-
   &:last-child {
     padding-bottom: 96px;
   }
@@ -44,6 +40,7 @@
   &--f {
     @extend .l_top-section;
     text-align: center;
+    padding-top: 96px;
 
     h2 img {
       display: inline-block;
