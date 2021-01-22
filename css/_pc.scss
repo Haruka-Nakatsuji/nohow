@@ -116,6 +116,25 @@
     }
   }
 
+  .p_checker__strong {
+
+    br {
+      display: none;
+    }
+    
+  }
+
+  .p_checker__prev {
+    //	transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    font-size: 1.5rem;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
   // .p_faq-figure__bg {
   //   z-index: 0;
   // }

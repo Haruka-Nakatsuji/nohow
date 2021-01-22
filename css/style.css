@@ -787,12 +787,13 @@ img {
 }
 
 .l_checker__in h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .l_checker__in p {
   margin: 1rem;
+  font-size: 1.25rem;
 }
 
 .l_checker__in span {
@@ -1682,8 +1683,7 @@ img {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   margin: 16px auto 0;
-  font-size: 2rem;
-  width: 90%;
+  font-size: 2.5rem;
 }
 
 .p_checker__gocheck:hover {
@@ -2985,6 +2985,17 @@ img {
   }
   .p_fashion__item i, .p_fashion__item--s i, .p_fashion__item--w i, .p_fashion__item--n i {
     font-size: 3rem;
+  }
+  .p_checker__strong br, .p_checker__strong--second br {
+    display: none;
+  }
+  .p_checker__prev, .p_checker__prev--tp {
+    width: 140px;
+    height: 140px;
+    font-size: 1.5rem;
+  }
+  .p_checker__prev i, .p_checker__prev--tp i {
+    font-size: 2rem;
   }
   .p_result__lg-list {
     width: 80%;
