@@ -869,7 +869,7 @@
       border: #ccc 1px solid;
       border-radius: 16px;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
 
       span:first-child {
         // display: inline-block;
@@ -1332,6 +1332,10 @@
 .p_re-title {
   @include titles;
   padding-top: 16px;
+}
+
+.p_re-serif {
+  @extend .p_he-serif;
 }
 
 .p_re-topsentence {
