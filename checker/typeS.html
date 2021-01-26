@@ -104,7 +104,7 @@
               alt="コーディネート1"
             />
             <div class="p_result__item">
-              <p class="p_result__item-serif">タップで商品ページへ</p>
+              <p class="p_result__item-serif"><span class="tap_or_click">クリック</span>で商品ページへ</p>
               <ul class="p_result__item-list">
                 <li>
                   <a href="#">
@@ -157,7 +157,7 @@
               alt="コーディネート2"
             />
             <div class="p_result__item">
-              <p class="p_result__item-serif">タップで商品ページへ</p>
+              <p class="p_result__item-serif"><span class="tap_or_click">クリック</span>で商品ページへ</p>
               <ul class="p_result__item-list">
                 <li>
                   <a href="#">
@@ -210,7 +210,7 @@
               alt="コーディネート3"
             />
             <div class="p_result__item">
-              <p class="p_result__item-serif">タップで商品ページへ</p>
+              <p class="p_result__item-serif"><span class="tap_or_click">クリック</span>で商品ページへ</p>
               <ul class="p_result__item-list">
                 <!-- <li>
                   <a href="#">
@@ -316,7 +316,7 @@
               alt="サンプルモデル"
             />
             <div class="p_result__item">
-              <p class="p_result__item-serif">タップで商品ページへ</p>
+              <p class="p_result__item-serif"><span class="tap_or_click">クリック</span>で商品ページへ</p>
               <ul class="p_result__item-list">
                 <li>
                   <a href="#">
@@ -369,7 +369,7 @@
               alt="サンプルモデル"
             />
             <div class="p_result__item">
-              <p class="p_result__item-serif">タップで商品ページへ</p>
+              <p class="p_result__item-serif"><span class="tap_or_click">クリック</span>で商品ページへ</p>
               <ul class="p_result__item-list">
                 <li>
                   <a href="#">
@@ -500,6 +500,10 @@
           item.classList.toggle("open");
         });
       });
+
+      if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+        document.querySelector(".tap_or_click").textContent = "タップ";
+      }
     </script>
   </body>
 </html>
